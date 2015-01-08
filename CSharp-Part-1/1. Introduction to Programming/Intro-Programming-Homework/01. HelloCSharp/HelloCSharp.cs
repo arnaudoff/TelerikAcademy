@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Create, compile and run a “Hello C#” console application.
+
+using System;
 
 class HelloCSharp
 {

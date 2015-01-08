@@ -1,6 +1,8 @@
-﻿using System;
+﻿// Modify the previous application to print your name.
 
-class HelloCSharp
+using System;
+
+class PrintMyName
 {
     static void Main()
     {
