@@ -1,0 +1,19 @@
+Perform a research (e.g. in Google or Wikipedia) and provide a short list with information about the most popular programming languages. How similar are they to C#? How do they differ from C#?
+
+Some of the most popular languages used include C, C++, Java, Python and PHP.
+
+C is generally used for writing low-level bits of code in embedded systems or kernels (i.e the Linux kernel is written in C). It differs from C# because things such as dynamic memory allocation require a lot 
+more effort. It lacks the OOP concept, unlike C#.
+
+C++ is a very powerful general-purpose programming language. It's very similar to C# because it contains the same paradigms, however, it's a relatively bad choice for beginners because programs written in C++
+are not type safe and generally complex to understand. It is mainly used for game development and performance intensive tasks - unlike C# which tends to be slower.
+
+Java is also one of the most powerful languages out there. Its syntax is very similar to C#, which eases the developer to "jump" from C# to Java. Java is a multi-platform language, while C# is
+mainly aimed at Windows (although projects like Mono exist, the implementation doesn't seem to be stable yet). Both Java and C# target development of huge projects.
+
+Python is another modern language that is widely used nowadays. It's similar to C# in some ways, but very different in others. Just like C#, Python is a general-purpose high-level language. It is a dynamic 
+language, which means source code isn't compiled but executed on the go with an interpreter (unlike C#, where the CLR takes care of compilation). Syntax-wise, it's also very different. Along with Perl, 
+it's one of the dynamic languages used by Linux system administrators to execute small, but powerful tools - something that C# cannot be used for. 
+
+PHP is a server-side scripting language designed for web development. It's similar to C# because it is a relatively good start for beginners and it is object-oriented. However, C# beats PHP
+when it comes to native Windows applications.
