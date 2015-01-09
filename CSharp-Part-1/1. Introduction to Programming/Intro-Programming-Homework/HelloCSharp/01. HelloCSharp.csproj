@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2EC32B4-A12F-4682-841C-51B4EE68E9D8}</ProjectGuid>
+    <ProjectGuid>{4FEC8CF4-7AD9-407E-BADC-848DCB8E915F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_06.PrintSequence</RootNamespace>
-    <AssemblyName>_06.PrintSequence</AssemblyName>
+    <RootNamespace>HelloCSharp</RootNamespace>
+    <AssemblyName>HelloCSharp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrintSequence.cs" />
+    <Compile Include="HelloCSharp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
