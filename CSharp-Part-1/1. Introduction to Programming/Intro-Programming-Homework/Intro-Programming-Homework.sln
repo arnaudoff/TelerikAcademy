@@ -15,7 +15,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. CalculateSquareRoot", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. PrintSequence", "PrintSequence\06. PrintSequence.csproj", "{4D0D7FD8-3193-49E7-AF94-3E0279251547}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorribleCode", "HorribleCode\HorribleCode.csproj", "{9BB02368-41CC-4DEC-A546-9E340C72BCA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. HorribleCode", "HorribleCode\07. HorribleCode.csproj", "{9BB02368-41CC-4DEC-A546-9E340C72BCA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. PrintDateAndTime", "PrintDateAndTime\08. PrintDateAndTime.csproj", "{17C2CEE9-1892-4FD8-AF1B-2D4EFE3F098A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. PrintAgeAfterTenYears", "PrintAgeAfterTenYears\09. PrintAgeAfterTenYears.csproj", "{21F5B743-4D7F-47E9-AD18-69935D902D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. PrintLongSequence", "PrintLongSequence\10. PrintLongSequence.csproj", "{A4AD551B-381A-40CC-8161-DFF722CC80C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9208EA85-7B63-4588-8D8B-8C0C80E919C7}"
+	ProjectSection(SolutionItems) = preProject
+		programming-languages.txt = programming-languages.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +62,18 @@ Global
 		{9BB02368-41CC-4DEC-A546-9E340C72BCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BB02368-41CC-4DEC-A546-9E340C72BCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BB02368-41CC-4DEC-A546-9E340C72BCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C2CEE9-1892-4FD8-AF1B-2D4EFE3F098A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C2CEE9-1892-4FD8-AF1B-2D4EFE3F098A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C2CEE9-1892-4FD8-AF1B-2D4EFE3F098A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C2CEE9-1892-4FD8-AF1B-2D4EFE3F098A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F5B743-4D7F-47E9-AD18-69935D902D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F5B743-4D7F-47E9-AD18-69935D902D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F5B743-4D7F-47E9-AD18-69935D902D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F5B743-4D7F-47E9-AD18-69935D902D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4AD551B-381A-40CC-8161-DFF722CC80C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4AD551B-381A-40CC-8161-DFF722CC80C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4AD551B-381A-40CC-8161-DFF722CC80C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4AD551B-381A-40CC-8161-DFF722CC80C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
