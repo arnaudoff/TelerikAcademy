@@ -1,0 +1,15 @@
+Perform a research (e.g. in Google or Wikipedia) and provide a short list with popular development environments (IDEs) like Visual Studio.
+
+Eclipse - it is a powerful, cross-platform IDE written in Java. It supports not only Java, but the most popular languages (via additional plugins). Some of them include C, C++, Perl, Python and PHP as well as 
+some purely functional languages like Haskell. Also, it's the number one IDE used for Android development (using the Android SDK) # http://www.stateofflow.com/images/32.jpg
+
+NetBeans - it is a free, open-source IDE that is used to develop desktop, mobile and web applications with Java, HTML5, PHP, C/C++ and more. # http://upload.wikimedia.org/wikipedia/commons/9/92/Netbeans_global.png
+
+Adobe Dreamweaver - it is an IDE used for web development, therefore it supports most of the technologies used for client-side as well as server-side scripting - CSS, JavaScript, 
+ASP (ASP JavaScript, ASP.NET C#,) and PHP. # http://upload.wikimedia.org/wikipedia/en/4/41/Dreamweaver8.png
+
+PHPEdit - PHPEdit is a PHP IDE; it offers debugging and database support (easy query building and data visualizing). It also has a built-in FTP client so you can edit PHP code on a remote
+server quickly without changing workspaces. # http://www.subeimagenes.com/img/sin-titulo-1-963722.jpg
+
+Free Pascal IDE - it is an IDE for writing Pascal. It has limited features, but that's mainly because of the rare releases and development. The IDE has a debugger and code completion, but is nowhere near 
+as good as the modern IDEs. Disclaimer: this ancient IDE is still used in some Bulgarian high schools. # http://upload.wikimedia.org/wikipedia/uk/f/f3/FreePascal_IDE.jpg

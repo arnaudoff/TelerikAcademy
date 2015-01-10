@@ -1,0 +1,2 @@
+Although C# and .NET are heavily integrated, they are certainly not the same thing. While C# is a programming language, .NET is basically what's "under" C# and what allows us to run C# (like JVM in Java). 
+.NET contains both the framework and the so-called language runtime which for .NET is called a Common Language Runtime (CLR).
