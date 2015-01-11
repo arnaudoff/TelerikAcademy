@@ -18,6 +18,7 @@ class NullValuesArithmetic
 
         firstNullableVar = 1337;
         secondNullableVar = 323.392321D;
+
         Console.WriteLine(firstNullableVar);
         Console.WriteLine(secondNullableVar);
     }
