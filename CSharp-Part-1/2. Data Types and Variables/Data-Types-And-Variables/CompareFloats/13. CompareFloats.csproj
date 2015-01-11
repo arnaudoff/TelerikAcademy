@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7C5E8517-4116-4D3A-8DF5-AD7D20AD1FD0}</ProjectGuid>
+    <ProjectGuid>{3AA9B5EF-58A0-4123-9FE5-BDE59BF20F81}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Boolean_Variable</RootNamespace>
-    <AssemblyName>Boolean Variable</AssemblyName>
+    <RootNamespace>CompareFloats</RootNamespace>
+    <AssemblyName>CompareFloats</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="CompareFloats.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
