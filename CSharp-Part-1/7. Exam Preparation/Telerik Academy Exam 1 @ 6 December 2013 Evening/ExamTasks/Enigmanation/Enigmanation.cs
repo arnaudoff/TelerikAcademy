@@ -8,8 +8,22 @@ class Enigmanation
 
         bool isBracketOpen = true;
         int finalResult = 0;
-        for (int i = 0; inputStr[i] != '='; i++)
+        int i = 0;
+        int totalOpCount = 0;
+        while (inputStr[i] != '=')
         {
+            if (inputStr[i] != '(' && inputStr[i] != ')' && !Char.IsDigit(inputStr[i]))
+            {
+                totalOpCount++;
+            }
+            i++;
+        }
+        i = 0;
+        Console.WriteLine(totalOpCount);
+        int currentOpCount = 0;
+        while (inputStr[i] != '=' && currentOpCount < totalOpCount)
+        {
+
             if (inputStr[i] == '(')
             {
                 isBracketOpen = true;
@@ -28,17 +42,19 @@ class Enigmanation
                             finalResult = (inputStr[i - 1] - '0') + (inputStr[i + 1] - '0');
                             break;
                         case '-':
-                            finalResult = inputStr[i - 1] - inputStr[i + 1];
+                            finalResult = (inputStr[i - 1] - '0') - (inputStr[i + 1] - '0');
                             break;
                         case '%':
-                            finalResult = inputStr[i - 1] % inputStr[i + 1];
+                            finalResult = (inputStr[i - 1] - '0') % (inputStr[i + 1] - '0');
                             break;
                         case '*':
-                            finalResult = inputStr[i - 1] * inputStr[i + 1];
+                            finalResult = (inputStr[i - 1] - '0') * (inputStr[i + 1] - '0');
                             break;
                     }
                 }
             }
+            i++;
+            currentOpCount++;
         }
         Console.WriteLine(finalResult);
     }
