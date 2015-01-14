@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Rectangles", "Rectangle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. IsThirdDigitSeven", "IsThirdDigitSeven\05. IsThirdDigitSeven.csproj", "{3EDD4F22-9424-48F5-A093-6071B716119B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. FourDigitNumber", "FourDigitNumber\06. FourDigitNumber.csproj", "{F5013945-6305-4DA1-B53D-6BFFB4A316F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. PointInCircle", "PointInCircle\07. PointInCircle.csproj", "{182A9AE6-EF5C-4031-86B6-3BF79D2B8895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{3EDD4F22-9424-48F5-A093-6071B716119B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EDD4F22-9424-48F5-A093-6071B716119B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EDD4F22-9424-48F5-A093-6071B716119B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5013945-6305-4DA1-B53D-6BFFB4A316F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5013945-6305-4DA1-B53D-6BFFB4A316F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5013945-6305-4DA1-B53D-6BFFB4A316F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5013945-6305-4DA1-B53D-6BFFB4A316F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182A9AE6-EF5C-4031-86B6-3BF79D2B8895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182A9AE6-EF5C-4031-86B6-3BF79D2B8895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182A9AE6-EF5C-4031-86B6-3BF79D2B8895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182A9AE6-EF5C-4031-86B6-3BF79D2B8895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
