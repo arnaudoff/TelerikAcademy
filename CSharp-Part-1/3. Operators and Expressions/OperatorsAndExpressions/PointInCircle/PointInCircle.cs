@@ -6,6 +6,9 @@ class PointInCircle
 {
     static void Main()
     {
-        // TODO.
+        int x = int.Parse(Console.ReadLine());
+        int y = int.Parse(Console.ReadLine());
+        int radius = int.Parse(Console.ReadLine());
+        // (x - center_x)^2 + (y - center_y)^2 < radius^2
     }
 }
