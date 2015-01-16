@@ -6,6 +6,7 @@ class OddEvenIntegers
 {
     static void Main()
     {
+        Console.WriteLine("Enter number: ");
         int inputNumber = int.Parse(Console.ReadLine());
 
         bool isOdd = false;

@@ -6,7 +6,9 @@ class Rectangles
 {
     static void Main()
     {
+        Console.WriteLine("Enter width: ");
         int inputWidth = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter height: ");
         int inputHeight = int.Parse(Console.ReadLine());
 
         int perimeter = 2 * (inputHeight + inputWidth);

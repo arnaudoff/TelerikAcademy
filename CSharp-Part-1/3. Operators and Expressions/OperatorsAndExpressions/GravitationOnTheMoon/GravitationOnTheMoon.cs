@@ -9,6 +9,7 @@ class Program
 {
     static void Main()
     {
+        Console.WriteLine("Enter earth weight: ");
         float earthWeight = float.Parse(Console.ReadLine());
         float moonWeight = 0.17F * earthWeight;
         Console.WriteLine(moonWeight);

@@ -6,7 +6,9 @@ class PointInCircle
 {
     static void Main()
     {
+        Console.WriteLine("Enter x-axis coordinate: ");
         double x = double.Parse(Console.ReadLine());
+        Console.WriteLine("Enter y-axis coordinate: ");
         double y = double.Parse(Console.ReadLine());
         bool isInside = false;
         if (Math.Pow((0 - x), 2) + Math.Pow((0 - y), 2) <=  4)

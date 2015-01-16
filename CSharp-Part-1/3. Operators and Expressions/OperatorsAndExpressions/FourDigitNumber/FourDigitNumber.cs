@@ -13,6 +13,7 @@ class FourDigitNumber
 {
     static void Main()
     {
+        Console.WriteLine("Enter number: ");
         int inputNumber = int.Parse(Console.ReadLine());
         Console.WriteLine("Sum: {0}\nReversed: {1}\nLast digit first: {2}\nSecond and third exchanged: {3}\n", 
             calculateSum(inputNumber), reverseNumber(inputNumber), lastDigitFirst(inputNumber), exchangeSecondAndThirdDigits(inputNumber));

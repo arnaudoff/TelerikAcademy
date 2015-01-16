@@ -7,3 +7,4 @@ Homework, classwork &amp; exam preparation for the academy.
     * CSharp-Part-1
        * Introduction to programming
        * Primitive data types and variables
+       * Operators and expressions

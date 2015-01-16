@@ -6,6 +6,7 @@ class IsThirdDigitSeven
 {
     static void Main()
     {
+        Console.WriteLine("Enter number: ");
         int inputNumber = int.Parse(Console.ReadLine());
 
         int i = 0;

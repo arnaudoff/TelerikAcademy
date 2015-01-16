@@ -6,6 +6,7 @@ class DivideBySevenAndFive
 {
     static void Main()
     {
+        Console.WriteLine("Enter number: ");
         int inputNumber = int.Parse(Console.ReadLine());
 
         bool canBeDivided = false;
