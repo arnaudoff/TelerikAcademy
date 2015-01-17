@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. KaspichaniaBoats", "Kas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Enigmanation", "Enigmanation\03. Enigmanation.csproj", "{EBC94C3C-7C6C-4364-B50F-F67EA84B2D1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. GameOfPage", "GameOfPage\05. GameOfPage.csproj", "{1EF365A6-A441-4CD3-8672-CCAEEB763E39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{EBC94C3C-7C6C-4364-B50F-F67EA84B2D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBC94C3C-7C6C-4364-B50F-F67EA84B2D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBC94C3C-7C6C-4364-B50F-F67EA84B2D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF365A6-A441-4CD3-8672-CCAEEB763E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF365A6-A441-4CD3-8672-CCAEEB763E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF365A6-A441-4CD3-8672-CCAEEB763E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF365A6-A441-4CD3-8672-CCAEEB763E39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,22 +6,41 @@ class KaspichaniaBoats
     {
         int N = int.Parse(Console.ReadLine());
 
-        int asteriskStartPos = (N * 2 + 1) / 2;
-        Console.WriteLine(asteriskStartPos);
-        for (int rows = 0; rows < 6 + ((N - 3) / 2) * 3; rows++)
+        int width = N * 2 + 1;
+        int height = 6 + ((N - 3) / 2) * 3;
+
+        Console.Write(new string('.', N));
+        Console.Write('*');
+        Console.Write(new string('.', N));
+        Console.WriteLine();
+        int i;
+        for (i = 1; i < N; i++)
         {
-            for (int columns = 0; columns < N * 2 + 1; columns++)
-            {
-                if (columns == asteriskStartPos || rows == asteriskStartPos)
-                {
-                    Console.Write("*");
-                }
-                else
-                {
-                    Console.Write('.');
-                }
-            }
+            Console.Write(new string('.', N-i));
+            Console.Write("*");
+            Console.Write(new string('.', i-1));
+            Console.Write("*");
+            Console.Write(new string('.', i-1));
+            Console.Write("*");
+            Console.Write(new string('.', N-i));
             Console.WriteLine();
         }
+        Console.WriteLine(new string('*', width));
+
+        for (i = 1; i < height - N - 1; i++)
+        {
+            Console.Write(new string('.', i));
+            Console.Write('*');
+            Console.Write(new string('.', N-i-1));
+            Console.Write('*');
+            Console.Write(new string('.', N-i-1));
+            Console.Write('*');
+            Console.Write(new string('.', i));
+            Console.WriteLine();
+        }
+        Console.Write(new string('.', i));
+        Console.Write(new string('*', N));
+        Console.Write(new string('.', i));
+        Console.WriteLine();
     }
 }
