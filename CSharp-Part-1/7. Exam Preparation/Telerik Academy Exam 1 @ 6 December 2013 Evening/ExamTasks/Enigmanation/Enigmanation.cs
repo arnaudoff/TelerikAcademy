@@ -5,9 +5,6 @@ class Enigmanation
     static void Main()
     {
         string inputStr = Console.ReadLine();
-
-        bool isBracketOpen = true;
-        int finalResult = 0;
         int i = 0;
         int totalOpCount = 0;
         while (inputStr[i] != '=')
@@ -19,8 +16,9 @@ class Enigmanation
             i++;
         }
         i = 0;
-        Console.WriteLine(totalOpCount);
         int currentOpCount = 0;
+        bool isBracketOpen = true;
+        int finalResult = 0;
         while (inputStr[i] != '=' && currentOpCount < totalOpCount)
         {
 
@@ -39,22 +37,29 @@ class Enigmanation
                     switch (inputStr[i])
                     {
                         case '+':
-                            finalResult = (inputStr[i - 1] - '0') + (inputStr[i + 1] - '0');
+                            if (currentOpCount >= 1)
+                            {
+                                // finalResult = finalResult + inputStr[i + 1 - '0'];
+                                Console.WriteLine(i);
+                            }
+                            else finalResult = (inputStr[i - 1] - '0') + (inputStr[i + 1] - '0');
                             break;
+                        /*
                         case '-':
-                            finalResult = (inputStr[i - 1] - '0') - (inputStr[i + 1] - '0');
+                            finalResult -= (inputStr[i - 1] - '0') - (inputStr[i + 1] - '0');
                             break;
                         case '%':
-                            finalResult = (inputStr[i - 1] - '0') % (inputStr[i + 1] - '0');
+                            finalResult %= (inputStr[i - 1] - '0') % (inputStr[i + 1] - '0');
                             break;
                         case '*':
-                            finalResult = (inputStr[i - 1] - '0') * (inputStr[i + 1] - '0');
+                            finalResult *= (inputStr[i - 1] - '0') * (inputStr[i + 1] - '0');
                             break;
+                        */
                     }
+                    currentOpCount++;
                 }
             }
             i++;
-            currentOpCount++;
         }
         Console.WriteLine(finalResult);
     }
