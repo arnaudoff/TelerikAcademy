@@ -8,3 +8,4 @@ Homework, classwork &amp; exam preparation for the academy.
        * Introduction to programming
        * Primitive data types and variables
        * Operators and expressions
+       * Console I/O
