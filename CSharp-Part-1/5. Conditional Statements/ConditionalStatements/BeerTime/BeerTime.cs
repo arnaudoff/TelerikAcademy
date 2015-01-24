@@ -11,6 +11,21 @@ class BeerTime
 {
     static void Main()
     {
+        Console.WriteLine();
+        Console.WriteLine("Enter time [hh:mm tt]: ");
+        string inputStr = Console.ReadLine();
+        DateTime inputHour = new DateTime();
+        inputHour = DateTime.ParseExact(inputStr, "hh:mm tt", null);
+
+        if (inputHour.Hour >= 13 || inputHour.Hour < 3)
+        {
+            Console.WriteLine("Beer time!");
+        }
+        else
+        {
+            Console.WriteLine("Non-beer time!");
+        }
+
 
     }
 }
