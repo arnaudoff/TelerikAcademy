@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 class NumberAsWords
 {
@@ -50,6 +51,7 @@ class NumberAsWords
             {90, "Ninety"},
         };
 
+        int digit;
         if (inputNumber >= 0 && inputNumber <= 9)
         {
             Console.WriteLine(digitsDict[inputNumber]);
@@ -58,10 +60,54 @@ class NumberAsWords
         {
             Console.WriteLine(teenDict[inputNumber]);
         }
-        else if (inputNumber % 10 == 0)
+        else
         {
-            Console.WriteLine(tensDict[inputNumber]);
+            int digitCount = 0;
+            int storedNumber = inputNumber;
+            while (inputNumber > 0)
+            {
+                digit = inputNumber % 10;
+                inputNumber /= 10;
+                digitCount++;
+            }
+            int rightmostDigit = storedNumber % 10;
+            switch (digitCount)
+            {
+                case 2:
+                    if (rightmostDigit == 0)
+                    {
+                        Console.WriteLine(tensDict[storedNumber]);
+                    }
+                    else 
+                    {
+                        int tens = (storedNumber / 10) * 10;
+                        Console.WriteLine(tensDict[tens] + " " + digitsDict[rightmostDigit].ToLower());
+                    }
+                    break;
+                case 3:
+                    int middleDigit = (storedNumber / 10) % 10;
+                    int hundreds = (storedNumber / 100);
+                    if (middleDigit == 0 && rightmostDigit == 0)
+                    {
+                        Console.WriteLine(digitsDict[hundreds] + " hundred");
+                    }
+                    else if (middleDigit == 0)
+                    {
+                        Console.WriteLine(digitsDict[hundreds] + " hundred and " + digitsDict[rightmostDigit].ToLower());
+                    }
+                    else
+                    {
+                        if (middleDigit == 1)
+                        {
+                            Console.WriteLine(digitsDict[hundreds] + " hundred and " + teenDict[10 + rightmostDigit].ToLower());
+                        }
+                        else
+                        {
+                            Console.WriteLine(digitsDict[hundreds] + " hundred and " + tensDict[middleDigit * 10].ToLower() + " " + digitsDict[rightmostDigit].ToLower());
+                        }
+                    }
+                    break;
+            }
         }
-        // TODO: modulus for up to 1000
     }
 }

@@ -17,6 +17,41 @@ class SortThreeNumbersNested
         Console.WriteLine("Enter third number: ");
         double thirdNumber = double.Parse(Console.ReadLine());
 
-        
+        if (firstNumber >= secondNumber)
+        {
+            if (firstNumber >= thirdNumber)
+            {
+                if (secondNumber >= thirdNumber)
+                {
+                    Console.WriteLine("{0} {1} {2}", firstNumber, secondNumber, thirdNumber);
+                }
+                else
+                {
+                    Console.WriteLine("{0} {1} {2}", firstNumber, thirdNumber, secondNumber);
+                }
+            }
+            else
+            {
+                Console.WriteLine("{0} {1} {2}", thirdNumber, firstNumber, secondNumber);
+            }
+        }
+        else if (secondNumber >= firstNumber)
+        {
+           if (secondNumber >= thirdNumber)
+           {
+               if (firstNumber >= thirdNumber)
+               {
+                   Console.WriteLine("{0} {1} {2}", secondNumber, firstNumber, thirdNumber);
+               }
+               else
+               {
+                   Console.WriteLine("{0} {1} {2}", secondNumber, thirdNumber, firstNumber);
+               }
+           }
+           else
+           {
+               Console.WriteLine("{0} {1} {2}", thirdNumber, secondNumber, firstNumber);
+           }
+        }
     }
 }

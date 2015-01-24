@@ -11,7 +11,8 @@ class BeerTime
 {
     static void Main()
     {
-        Console.WriteLine();
+        // Note that you should enter the time with leading zeros, i.e 1:00 PM should be 01:00 PM!
+
         Console.WriteLine("Enter time [hh:mm tt]: ");
         string inputStr = Console.ReadLine();
         DateTime inputHour = new DateTime();

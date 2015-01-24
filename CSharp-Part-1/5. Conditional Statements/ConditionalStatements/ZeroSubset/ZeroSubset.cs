@@ -10,5 +10,6 @@ class ZeroSubset
 {
     static void Main()
     {
+
     }
 }
