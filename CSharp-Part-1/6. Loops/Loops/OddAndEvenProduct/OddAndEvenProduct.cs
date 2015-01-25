@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * You are given n integers (given in a single line, separated by a space).
+ * Write a program that checks whether the product of the odd elements is equal to the product of the even elements.
+ * Elements are counted from 1 to n, so the first element is odd, the second is even, etc.
+ */
 
-namespace OddAndEvenProduct
+using System;
+
+class OddAndEvenProduct
 {
-    class OddAndEvenProduct
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

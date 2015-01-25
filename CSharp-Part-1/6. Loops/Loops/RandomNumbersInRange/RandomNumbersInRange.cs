@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Write a program that enters 3 integers n, min and max (min != max) and prints n random numbers in the range [min...max].
 
-namespace RandomNumbersInRange
+using System;
+
+class RandomNumbersInRange
 {
-    class RandomNumbersInRange
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

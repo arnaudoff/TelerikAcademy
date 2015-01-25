@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * Using loops write a program that converts a binary integer number to its decimal form.
+ * The input is entered as string. The output should be a variable of type long.
+ * Do not use the built-in .NET functionality. 
+ */
 
-namespace BinaryToDecimal
+using System;
+
+class BinaryToDecimal
 {
-    class BinaryToDecimal
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>c2e86674-e56c-4fd3-99ed-d0e98e3052e0</ProjectGuid>
+    <ProjectGuid>{3B999E9C-62C0-4E36-A8D0-2B6F7A23409F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HexadecimalToDecimal</RootNamespace>
