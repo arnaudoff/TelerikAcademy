@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{38D106C7-5A9C-4917-A699-BBE21209D23A}</ProjectGuid>
+    <ProjectGuid>a40a77f7-7035-4d8c-9a32-1df882cd08a8</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MinMaxSumAndAverage</RootNamespace>
-    <AssemblyName>MinMaxSumAndAverage</AssemblyName>
+    <RootNamespace>FactorielDivision</RootNamespace>
+    <AssemblyName>FactorielDivision</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MinMaxSumAndAverage.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
