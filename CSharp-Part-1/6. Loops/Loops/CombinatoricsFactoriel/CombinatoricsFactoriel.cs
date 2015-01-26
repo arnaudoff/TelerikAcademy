@@ -5,11 +5,28 @@
  */
 
 using System;
+using System.Numerics;
 
 class CombinatoricsFactoriel
 {
     static void Main()
     {
+        Console.WriteLine("Enter number [n]: ");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter number [k]: ");
+        int k = int.Parse(Console.ReadLine());
 
+        BigInteger firstResult = 1;
+        for (int i = k + 1; i <= n; i++)
+        {
+            firstResult = firstResult * i;
+        }
+        BigInteger secondResult = 1;
+        for (int i = 1; i <= n - k; i++)
+        {
+            secondResult = secondResult * i;
+        }
+
+        Console.WriteLine(firstResult / secondResult);      
     }
 }

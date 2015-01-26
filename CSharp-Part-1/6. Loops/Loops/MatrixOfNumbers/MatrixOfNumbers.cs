@@ -6,6 +6,16 @@ class MatrixOfNumbers
 {
     static void Main()
     {
+        Console.WriteLine("Enter matrix size [n]: ");
+        byte inputNumber = byte.Parse(Console.ReadLine());
 
+        for (byte i = 0; i < inputNumber; i++)
+        {
+            for (byte j = 1; j <= inputNumber; j++)
+            {
+                Console.Write("{0} ", j + i);
+            }
+            Console.WriteLine();
+        }
     }
 }

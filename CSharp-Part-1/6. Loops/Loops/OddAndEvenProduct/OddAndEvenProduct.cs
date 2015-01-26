@@ -10,5 +10,22 @@ class OddAndEvenProduct
 {
     static void Main()
     {
+        Console.WriteLine("Enter sequence: ");
+        string[] tokens = Console.ReadLine().Split(' ');
+
+        int oddProduct = 1;
+        int evenProduct = 1;
+        for (int i = 0; i < tokens.Length; i++)
+        {
+            if (i % 2 == 0)
+            {
+                evenProduct *= int.Parse(tokens[i]);
+            }
+            else
+            {
+                oddProduct *= int.Parse(tokens[i]);
+            }
+        }
+        Console.WriteLine("{0}", (evenProduct == oddProduct) ? "Yes." : "No.");
     }
 }

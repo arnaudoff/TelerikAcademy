@@ -9,5 +9,25 @@ class FactorielSum
 {
     static void Main()
     {
+        Console.WriteLine("Enter number [n]: ");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter number [x]: ");
+        int x = int.Parse(Console.ReadLine());
+
+        double sum = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            sum += calculateFactoriel(i) / (double)Math.Pow(x, i);
+        }
+        Console.WriteLine("{0:F5}", sum);
+    }
+    static double calculateFactoriel(int inputNumber)
+    {
+        int result = 1;
+        for (int i = 1; i <= inputNumber; i++)
+        {
+            result = result * i;
+        }
+        return result;
     }
 }
