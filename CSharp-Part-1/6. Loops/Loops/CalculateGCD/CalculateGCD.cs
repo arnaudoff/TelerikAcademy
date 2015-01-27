@@ -9,5 +9,10 @@ class CalculateGCD
 {
     static void Main()
     {
+        Console.WriteLine("Enter first number [a]: ");
+        int firstNumber = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter second number [b]: ");
+        int secondNumber = int.Parse(Console.ReadLine());
+
     }
 }
