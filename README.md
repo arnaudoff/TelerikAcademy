@@ -10,3 +10,5 @@ Homework, classwork &amp; exam preparation for the academy.
        * Operators and expressions
        * Console I/O
        * Conditional statements
+       * Loops
+       * Exam Preparation
