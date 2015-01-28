@@ -11,18 +11,21 @@ class TrailingZeroesInFactoriel
     static void Main()
     {
         Console.WriteLine("Enter a number [n]: ");
-        int n = int.Parse(Console.ReadLine());
+        int inputNumber = int.Parse(Console.ReadLine());
 
-        Console.WriteLine(calculateFactoriel(n));
+        BigInteger result = countTrailingZeroes(inputNumber);
+        Console.WriteLine(result);
+
     }
 
-    static BigInteger calculateFactoriel(int inputNumber)
+    static BigInteger countTrailingZeroes(int n)
     {
-        BigInteger result = 1;
-        for (int i = 1; i <= inputNumber; i++)
+        // Since a trailing zero means n * 10 and 10 is 5 x 2, we're going to divide by each power of two (until n / i > 0)
+        int count = 0;
+        for (int i = 5; n / i > 0; i = i * 5)
         {
-            result = result * i;
+            count += n / i;
         }
-        return result;
+        return count;
     }
 }

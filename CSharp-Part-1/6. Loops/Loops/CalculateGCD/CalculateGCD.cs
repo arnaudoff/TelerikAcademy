@@ -4,6 +4,7 @@
  */
 
 using System;
+using System.Collections.Generic;
 
 class CalculateGCD
 {
@@ -14,5 +15,13 @@ class CalculateGCD
         Console.WriteLine("Enter second number [b]: ");
         int secondNumber = int.Parse(Console.ReadLine());
 
+        int remainder = 1;
+        while (remainder > 0)
+        {
+            remainder = firstNumber % secondNumber;
+            firstNumber = secondNumber;
+            secondNumber = remainder;
+        }
+        Console.WriteLine(firstNumber);
     }
 }

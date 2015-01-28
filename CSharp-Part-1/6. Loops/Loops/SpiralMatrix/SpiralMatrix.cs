@@ -6,5 +6,8 @@ class SpiralMatrix
 {
     static void Main()
     {
+        Console.WriteLine("Enter matrix size [n]: ");
+        int n = int.Parse(Console.ReadLine());
+
     }
 }

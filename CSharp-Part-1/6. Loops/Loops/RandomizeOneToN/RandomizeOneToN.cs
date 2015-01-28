@@ -17,7 +17,7 @@ class RandomizeOneToN
         numArray = ShuffleArray(numArray);
         for (int i = 0; i < inputNumber; i++)
         {
-            Console.Write("{0}", numArray[i]);
+            Console.Write("{0} ", numArray[i]);
         }
         Console.WriteLine();
     }
@@ -25,7 +25,7 @@ class RandomizeOneToN
     static int[] ShuffleArray(int[] array)
     {
         Random r = new Random();
-        for (int i = array.Length; i > 0; i--)
+        for (int i = array.Length; i >= 1; i--)
         {
             int j = r.Next(i);
             int temp = array[j];
