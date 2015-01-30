@@ -7,120 +7,118 @@ namespace GameOfPage
         static float cashPaid = 0F;
         static void Main(string[] args)
         {
-            string[] inputArray = new string[3];
-            for (int i = 0; i < 3; i++)
+            char[,] inputArray = new char[18, 18];
+            for (int i = 0; i < 18; i++)
             {
-                inputArray[i] = Console.ReadLine();
+                for (int j = 0; j < 18; j++)
+                {
+                    inputArray[i, j] = '0';
+                }
+            }
+            for (int i = 1; i < 17; i++)
+            {
+                for (int j = 1; j < 17; j++)
+                {
+                    inputArray[i, j] = (char)Console.Read();
+                }
+                Console.ReadLine();
             }
             string inputStr;
             while (parseCommand(inputArray, inputStr = Console.ReadLine())) ;
         }
-
-        /*
-         * Return values:
-         * Complete cookie -> 1
-         * Broken cookie -> 2
-         * Cookie crumb -> 3
-         * Nothing -> 0
-         */
-    
-        private static int checkCookie(string[] inputArray, int row, int col)
+        static void clearCookie(char[,] inputArray, int row, int col)
         {
-            bool isBroken = false;
+            for (int i = row - 1; i <= row + 1; i++)
+            {
+                for (int j = col - 1; j <= col + 1; j++)
+                {
+                    inputArray[i, j] = '0';
+                }
+            }
+        }
+        private static string checkCookie(char[,] inputArray, int row, int col)
+        {
             bool isCookie = true;
-            if (col == 0 && row == 0)
+            for (int i = row - 1; i <= row + 1; i++)
             {
-                if (inputArray[0][1] == 1 || inputArray[1][1] == 1 || inputArray[1][0] == 1)
-                {
-                    isBroken = true;
-                }
-            }
-            else if (col == 0 && row != 0)
-            {
-                if (inputArray[row - 1][0] == 1 || inputArray[row + 1][0] == 1 || inputArray[row - 1][1] == 1 || inputArray[row + 1][1] == 1 || inputArray[row][1] == 1)
-                {
-                    isBroken = true;
-                }
-            }
-            else if (col != 0 && row == 0)
-            {
-                if (inputArray[0][col + 1] == 1 || inputArray[0][col - 1] == 1 || inputArray[1][col + 1] == 1 || inputArray[1][col - 1] == 1 || inputArray[1][col] == 1)
-                {
-                    isBroken = true;
-                }
-            }
-            else if (col == 15 && row == 15)
-            {
-                if (inputArray[15][14] == 1 || inputArray[14][14] == 1 || inputArray[14][15] == 1)
-                {
-                    isBroken = true;
-                }
-            }
-            else if (col == 15 && row != 15)
-            {
-                if (inputArray[row][14] == 1 || inputArray[row - 1][14] == 1 || inputArray[row + 1][14] == 1 || inputArray[row - 1][15] == 1 || inputArray[row + 1][15] == 1)
-                {
-                    isBroken = true;
-                }
-            }
-            else if (col != 15 && row == 15)
-            {
-                if (inputArray[15][col - 1] == 1 || inputArray[15][col + 1] == 1 || inputArray[14][col] == 1 || inputArray[14][col - 1] == 1 || inputArray[14][col + 1] == 1)
-                {
-                    isBroken = true;
-                }
-            }
-            else
-            {
-                // Check with ifs... Again.
-            }
-            if (isBroken == false && isCookie == false)
-            {
-                // Cookie crumb.
-                if (inputArray[row][col] == 1)
-                {
-                    return 3;
-                }
-                // Nothing
-                else
-                {
-                    return 0;
-                }
-            }
-            if (isBroken == true)
-            {
-                return 2;
+                for (int j = col - 1; j <= col + 1; j++)
+		        {
+                    if (inputArray[i, j] == '0')
+                    {
+                        isCookie = false;
+                    }
+		        }
             }
             if (isCookie)
             {
-                return 1;
+                return "cookie";
             }
-            return -1;
+            else
+            {
+                bool adjacentBits = false;
+                bool nearBits = false;
+                if (inputArray[row, col - 1] == '1'|| inputArray[row, col + 1] == '1')
+                {
+                    adjacentBits = true;
+                }
+                for (int j = col - 1; j <= col + 1; j++)
+                {
+                    if (inputArray[row - 1, col] == '1' || inputArray[row + 1, col] == '1')
+                    {
+                        nearBits = true;
+                    }
+                }
+                if (adjacentBits == true || nearBits == true)
+                {
+                    return "broken cookie";
+                }
+                else if (inputArray[row, col] == '1')
+                {
+                    return "cookie crumb";
+                }
+                else
+                {
+                    return "smile";
+                }
+            }
         }
-        private static bool parseCommand(string[] inputArray, string inputStr)
+        private static bool parseCommand(char[,] inputArray, string inputStr)
         {
             bool isAcceptable = false;
             int row = 0;
             int col = 0;
-            int res;
+            string res;
             switch (inputStr)
             {
                 case "what is":
                     row = int.Parse(Console.ReadLine());
                     col = int.Parse(Console.ReadLine());
-                    res = checkCookie(inputArray, row, col);
-                    // ....
+                    res = checkCookie(inputArray, row + 1, col + 1);
+                    Console.WriteLine(res);
                     isAcceptable = true;
                     break;
                 case "buy":
                     row = int.Parse(Console.ReadLine());
                     col = int.Parse(Console.ReadLine());
-                    res = checkCookie(inputArray, row, col);
-                    // increment cash by 1.79$              
+                    res = checkCookie(inputArray, row + 1, col + 1);
+                    switch (res)
+                    {
+                        case "cookie":
+                            cashPaid += 1.79F;
+                            clearCookie(inputArray, row + 1, col + 1);
+                            break;
+                        case "broken cookie":
+                        case "cookie crumb":
+                            Console.WriteLine("page");
+                            break;
+                        default: 
+                            Console.WriteLine("smile");
+                            break;
+                    }
                     isAcceptable = true;
                     break;
                 case "paypal":
-                    Console.WriteLine(cashPaid);
+                    Console.WriteLine("{0:F2}", cashPaid);
                     isAcceptable = false;
                     break;
             }

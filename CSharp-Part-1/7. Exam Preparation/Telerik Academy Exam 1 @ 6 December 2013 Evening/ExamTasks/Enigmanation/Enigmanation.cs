@@ -3,122 +3,96 @@ using System.Collections.Generic;
 
 class Enigmanation
 {
-    static int getPrecedence(char op)
-    {
-        switch (op)
-        {
-            case '*':
-                return 5;
-            case '%':
-                return 5;
-            case '-':
-                return 4;
-            case '+':
-                return 4;
-        }
-        return 0;
-    }
-    static bool isOperator(char c)
-    {
-        if (c == '+' || c == '-' || c == '*' || c == '%')
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
     static void Main()
     {
-        string inputStr = Console.ReadLine();
+        string expression = Console.ReadLine();
 
-        Queue<char> outputQueue = new Queue<char>();
-        Stack<char> operatorsStack = new Stack<char>();
+        decimal result = 0;
+        decimal currentBracketResult = 0;
+        char currentOperator = '+';
+        char currentBracketOperator = '+';
 
-        int i = 0;
-        while (inputStr[i] != '=')
+        bool isInBracket = false;
+        foreach (char symbol in expression)
         {
-            if (Char.IsDigit(inputStr[i]))
+            if (!Char.IsDigit(symbol))
             {
-                outputQueue.Enqueue(inputStr[i]);
-            }
-            else
-            {
-                if (inputStr[i] == '(')
+                if (symbol == '(')
                 {
-                    operatorsStack.Push(inputStr[i]);
+                    isInBracket = true;
+                    continue;
                 }
-                else if (inputStr[i] == ')')
+                if (isInBracket)
                 {
-                    do
-                    {
-                        outputQueue.Enqueue(operatorsStack.Pop());
-                    } while (operatorsStack.Peek() != '(');
-                    operatorsStack.Pop();
+                    currentBracketOperator = symbol;
                 }
                 else
                 {
-                    while (operatorsStack.Count != 0 && getPrecedence(inputStr[i]) <= getPrecedence(operatorsStack.Peek()))
-                    {
-                        outputQueue.Enqueue(operatorsStack.Pop());
-                    }
-                    operatorsStack.Push(inputStr[i]);
+                    currentOperator = symbol;
                 }
-            }
-            i++;
-        }
-        while (operatorsStack.Count > 0)
-        {
-            outputQueue.Enqueue(operatorsStack.Pop());
-        }
-        char[] sOutputQueue = new char[outputQueue.Count];
-        outputQueue.CopyTo(sOutputQueue, 0);
-        double result = CalculateRPN(sOutputQueue);
-        Console.WriteLine("{0:F3}", result);
-    }
-    static double CalculateRPN(char[] rpn)
-    {
-        Stack<double> stack = new Stack<double>();
-        double number = 0D;
-
-        foreach (char token in rpn)
-        {
-            if (double.TryParse(token.ToString(), out number))
-            {
-                stack.Push(number);
+                if (symbol == ')')
+                {
+                    isInBracket = false;
+                    switch (currentOperator)
+                    {
+                        case '+':
+                            result += currentBracketResult;
+                            break;
+                        case '-':
+                            result -= currentBracketResult;
+                            break;
+                        case '*':
+                            result *= currentBracketResult;
+                            break;
+                        case '%':
+                            result %= currentBracketResult;
+                            break;
+                    }
+                    currentBracketResult = 0;
+                    currentBracketOperator = '+';
+                }
             }
             else
             {
-                switch (token)
+                int currentNumber = symbol - '0';
+                if (isInBracket)
                 {
-  
-                    case '*':
-                        {
-                            stack.Push(stack.Pop() * stack.Pop());
+                    switch (currentBracketOperator)
+                    {
+                        case '+':
+                            currentBracketResult += currentNumber;
                             break;
-                        }
-                    case '%':
-                        {
-                            number = stack.Pop();
-                            stack.Push(stack.Pop() % number);
+                        case '-':
+                            currentBracketResult -= currentNumber;
                             break;
-                        }
-                    case '+':
-                        {
-                            stack.Push(stack.Pop() + stack.Pop());
+                        case '*':
+                            currentBracketResult *= currentNumber;
                             break;
-                        }
-                    case '-':
-                        {
-                            number = stack.Pop();
-                            stack.Push(stack.Pop() - number);
+                        case '%':
+                            currentBracketResult %= currentNumber;
                             break;
-                        }
+                    }
+                }
+                else
+                {
+                    switch (currentOperator)
+                    {
+                        case '+':
+                            result += currentNumber;
+                            break;
+                        case '-':
+                            result -= currentNumber;
+                            break;
+                        case '*':
+                            result *= currentNumber;
+                            break;
+                        case '%':
+                            result %= currentNumber;
+                            break;
+                    }
                 }
             }
         }
-
-        return stack.Pop();
+        Console.WriteLine("{0:F3}", result);
     }
 }

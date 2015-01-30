@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Enigmanation", "Enigman
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. GameOfPage", "GameOfPage\05. GameOfPage.csproj", "{1EF365A6-A441-4CD3-8672-CCAEEB763E39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnigmanationRPN", "EnigmanationRPN\EnigmanationRPN.csproj", "{FDF103F1-3324-41B1-96E8-7F70E7A49E8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1EF365A6-A441-4CD3-8672-CCAEEB763E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EF365A6-A441-4CD3-8672-CCAEEB763E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EF365A6-A441-4CD3-8672-CCAEEB763E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF103F1-3324-41B1-96E8-7F70E7A49E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF103F1-3324-41B1-96E8-7F70E7A49E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF103F1-3324-41B1-96E8-7F70E7A49E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF103F1-3324-41B1-96E8-7F70E7A49E8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
