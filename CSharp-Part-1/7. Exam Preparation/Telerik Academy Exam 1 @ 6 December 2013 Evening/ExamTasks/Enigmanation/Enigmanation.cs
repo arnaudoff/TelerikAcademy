@@ -1,108 +1,124 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class Enigmanation
 {
-    static void Main()
+    static int getPrecedence(char op)
     {
-        string inputStr = Console.ReadLine();
-        int i = 0;
-
-        // Check if brackets even exist in the input
-        int totalBracketCount = 0;
-        while (inputStr[i] != '=')
+        switch (op)
         {
-            if (inputStr[i] == '(' || inputStr[i] == ')')
-            {
-                totalBracketCount++;
-            }
-            i++;
+            case '*':
+                return 5;
+            case '%':
+                return 5;
+            case '-':
+                return 4;
+            case '+':
+                return 4;
         }
-        totalBracketCount /= 2;
-        inputStr = inputStr.Remove(inputStr.Length - 1);
-        double finalResult = 0D;
-        Console.WriteLine(totalBracketCount);
-        if (totalBracketCount < 1)
+        return 0;
+    }
+    static bool isOperator(char c)
+    {
+        if (c == '+' || c == '-' || c == '*' || c == '%')
         {
-            finalResult = calculateInsideBrackets(inputStr);
+            return true;
         }
         else
         {
-            // (1+9)%6–(7%2)*8=
-            int currentBracketCount = 0;
-            int currentLength = 0;
-            while (currentLength < inputStr.Length && currentBracketCount < totalBracketCount)
-            {
-                // TODO..
-            }
+            return false;
         }
-        Console.WriteLine("{0:F3}", finalResult);
     }
-
-    static double calculateInsideBrackets(string inputStr)
+    static void Main()
     {
-        int totalOpCount = 0;
-        int i;
-        for (i = 0; i < inputStr.Length; i++)
+        string inputStr = Console.ReadLine();
+
+        Queue<char> outputQueue = new Queue<char>();
+        Stack<char> operatorsStack = new Stack<char>();
+
+        int i = 0;
+        while (inputStr[i] != '=')
         {
-            if (!Char.IsDigit(inputStr[i]))
+            if (Char.IsDigit(inputStr[i]))
             {
-                totalOpCount++;
+                outputQueue.Enqueue(inputStr[i]);
             }
-        }
-        int currentOpCount = 0;
-        double finalResult = 0D;
-        i = 0;
-        while (i < inputStr.Length && currentOpCount < totalOpCount)
-        {
-            if (!Char.IsDigit(inputStr[i]))
+            else
             {
-                switch (inputStr[i])
+                if (inputStr[i] == '(')
                 {
-                    case '+':
-                        if (currentOpCount >= 1)
-                        {
-                            finalResult = finalResult + (inputStr[i + 1] - '0');
-                        }
-                        else
-                        {
-                            finalResult = (inputStr[i - 1] - '0') + (inputStr[i + 1] - '0');
-                        }
-                        break;
-                    case '-':
-                        if (currentOpCount >= 1)
-                        {
-                            finalResult = finalResult - (inputStr[i + 1] - '0');
-                        }
-                        else
-                        {
-                            finalResult = (inputStr[i - 1] - '0') - (inputStr[i + 1] - '0');
-                        }
-                        break;
-                    case '%':
-                        if (currentOpCount >= 1)
-                        {
-                            finalResult = finalResult % (inputStr[i + 1] - '0');
-                        }
-                        else
-                        {
-                            finalResult = (inputStr[i - 1] - '0') % (inputStr[i + 1] - '0');
-                        }
-                        break;
-                    case '*':
-                        if (currentOpCount >= 1)
-                        {
-                            finalResult = finalResult * (inputStr[i + 1] - '0');
-                        }
-                        else
-                        {
-                            finalResult = (inputStr[i - 1] - '0') * (inputStr[i + 1] - '0');
-                        }
-                        break;
+                    operatorsStack.Push(inputStr[i]);
                 }
-                currentOpCount++;
+                else if (inputStr[i] == ')')
+                {
+                    do
+                    {
+                        outputQueue.Enqueue(operatorsStack.Pop());
+                    } while (operatorsStack.Peek() != '(');
+                    operatorsStack.Pop();
+                }
+                else
+                {
+                    while (operatorsStack.Count != 0 && getPrecedence(inputStr[i]) <= getPrecedence(operatorsStack.Peek()))
+                    {
+                        outputQueue.Enqueue(operatorsStack.Pop());
+                    }
+                    operatorsStack.Push(inputStr[i]);
+                }
             }
             i++;
         }
-        return finalResult;
+        while (operatorsStack.Count > 0)
+        {
+            outputQueue.Enqueue(operatorsStack.Pop());
+        }
+        char[] sOutputQueue = new char[outputQueue.Count];
+        outputQueue.CopyTo(sOutputQueue, 0);
+        double result = CalculateRPN(sOutputQueue);
+        Console.WriteLine("{0:F3}", result);
+    }
+    static double CalculateRPN(char[] rpn)
+    {
+        Stack<double> stack = new Stack<double>();
+        double number = 0D;
+
+        foreach (char token in rpn)
+        {
+            if (double.TryParse(token.ToString(), out number))
+            {
+                stack.Push(number);
+            }
+            else
+            {
+                switch (token)
+                {
+  
+                    case '*':
+                        {
+                            stack.Push(stack.Pop() * stack.Pop());
+                            break;
+                        }
+                    case '%':
+                        {
+                            number = stack.Pop();
+                            stack.Push(stack.Pop() % number);
+                            break;
+                        }
+                    case '+':
+                        {
+                            stack.Push(stack.Pop() + stack.Pop());
+                            break;
+                        }
+                    case '-':
+                        {
+                            number = stack.Pop();
+                            stack.Push(stack.Pop() - number);
+                            break;
+                        }
+                }
+            }
+        }
+
+        return stack.Pop();
     }
 }
