@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program
+class TribonacciTriangle
 {
     static void Main()
     {
@@ -21,27 +21,27 @@ class Program
         long nextnumber = 0L;
         Console.WriteLine(numbers[0]);
         Console.WriteLine("{0} {1}", numbers[1], numbers[2]);
-        int newline_number = 3;
+        int difference = 3;
+        int differenceCount = 4;
+        // Draw the triangle
         for (int i = 1; i <= n - 3; i++)
         {
             nextnumber = numbers[0] + numbers[1] + numbers[2];
-            if (i != newline_number)
-            {
-                Console.Write("{0} ", nextnumber);
-            }
-            else
-            {
-                Console.Write("{0}", nextnumber);
-            }
             numbers[0] = numbers[1];
             numbers[1] = numbers[2];
             numbers[2] = nextnumber;
-            if (i == newline_number)
+            if (i == difference)
             {
+                Console.Write("{0}", nextnumber);
                 Console.WriteLine();
-                newline_number = 2 * newline_number + 1;
+                difference = difference + differenceCount;
+                differenceCount++;
+            }
+            else
+            {
+                Console.Write("{0} ", nextnumber);
             }
         }
-
+        Console.WriteLine();
     }
 }
