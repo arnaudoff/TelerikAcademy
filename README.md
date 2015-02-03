@@ -12,4 +12,4 @@ Homework, classwork &amp; exam preparation for the academy.
        * Conditional statements
        * Loops
        * Exam Preparation
-    * CSharp-Part-1
+    * CSharp-Part-2
