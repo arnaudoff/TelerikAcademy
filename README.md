@@ -13,3 +13,4 @@ Homework, classwork &amp; exam preparation for the academy.
        * Loops
        * Exam Preparation
     * CSharp-Part-2
+       * Arrays
