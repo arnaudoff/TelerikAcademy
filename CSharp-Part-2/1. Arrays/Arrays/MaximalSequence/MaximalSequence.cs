@@ -1,7 +1,6 @@
 ﻿// Write a program that finds the maximal sequence of equal elements in an array.
 
 using System;
-using System.Collections.Generic;
 
 class MaximalSequence
 {
@@ -30,27 +29,39 @@ class MaximalSequence
         }
         else 
         {
-            List<int> currentSequence = new List<int>();
-
-            // TODO: Fix this
-            int i = 0;
-            while (i < arrSize)
+            int tempMember = 0;
+            int tempCount = 0;
+            int highestCount = 0;
+            int arrIndex = 1;
+            while (arrIndex < arrSize)
             {
-                if (inputArray[i] == inputArray[i + 1] && i < arrSize - 1)
+                if (inputArray[arrIndex] == inputArray[arrIndex - 1])
                 {
-                    currentSequence.Add(inputArray[i]);
-                    currentSequence.Add(inputArray[i]);
-                    i += 2;
+                    tempMember = inputArray[arrIndex];
+                    if (tempCount > 0)
+                    {
+                        tempCount++;
+                    }
+                    else
+                    {
+                        tempCount += 2;
+                    }
                 }
-                else if (inputArray[i] == currentSequence[i - 1])
+                else
                 {
-                    currentSequence.Add(inputArray[i]);
+                    tempCount = 0;
                 }
+                if (tempCount > highestCount)
+                {
+                    highestCount = tempCount;
+                }
+                arrIndex++;
             }
-            foreach (int sequenceMember in currentSequence)
+            for (int i = 0; i < highestCount; i++)
             {
-                Console.Write("{0} ", sequenceMember);
+                Console.Write("{0} ", tempMember);
             }
+            Console.WriteLine();
         }
     }
 }
