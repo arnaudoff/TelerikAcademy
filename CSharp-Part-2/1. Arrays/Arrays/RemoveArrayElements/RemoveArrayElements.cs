@@ -4,10 +4,24 @@
  */
 
 using System;
+using System.Collections;
+using System.Collections.Generic;
+
 
 class RemoveArrayElements
 {
     static void Main()
     {
+        Console.WriteLine("Enter array length: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter array contents: ");
+        int[] inputArray = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            inputArray[i] = int.Parse(Console.ReadLine());
+        }
+
+        // TODO.
     }
 }
