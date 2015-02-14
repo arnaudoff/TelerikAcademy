@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. FillMatrix", "FillMatrix\01. FillMatrix.csproj", "{61BA7B0E-B3B9-4CAD-AD46-74DE8969CE78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. MaximalSum", "MaximalSum\02. MaximalSum.csproj", "{70FE5CF7-EEC1-4BFA-B0CC-82577984981E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. SequenceInMatrix", "SequenceInMatrix\03. SequenceInMatrix.csproj", "{B998A564-17E1-4FAE-87E8-BB5A6D49C512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{39E2D90D-A91A-4D9C-99C2-B43A92C76608}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61BA7B0E-B3B9-4CAD-AD46-74DE8969CE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BA7B0E-B3B9-4CAD-AD46-74DE8969CE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BA7B0E-B3B9-4CAD-AD46-74DE8969CE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BA7B0E-B3B9-4CAD-AD46-74DE8969CE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FE5CF7-EEC1-4BFA-B0CC-82577984981E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FE5CF7-EEC1-4BFA-B0CC-82577984981E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FE5CF7-EEC1-4BFA-B0CC-82577984981E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FE5CF7-EEC1-4BFA-B0CC-82577984981E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B998A564-17E1-4FAE-87E8-BB5A6D49C512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B998A564-17E1-4FAE-87E8-BB5A6D49C512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B998A564-17E1-4FAE-87E8-BB5A6D49C512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B998A564-17E1-4FAE-87E8-BB5A6D49C512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E2D90D-A91A-4D9C-99C2-B43A92C76608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E2D90D-A91A-4D9C-99C2-B43A92C76608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E2D90D-A91A-4D9C-99C2-B43A92C76608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E2D90D-A91A-4D9C-99C2-B43A92C76608}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
