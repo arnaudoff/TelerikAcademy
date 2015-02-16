@@ -1,6 +1,7 @@
 ﻿// Write a program, that reads from the console an array of N integers and an integer K, sorts the array and using the method Array.BinSearch() finds the largest number in the array which is ≤ K.
 
 using System;
+using System.Linq;
 
 class BinarySearch
 {
@@ -19,19 +20,17 @@ class BinarySearch
         }
 
         Array.Sort(numbers);
+        /* 
+         * LINQ solution:
+         * 
+         * var result = numbers.Where(t => t <= key).Max();
+         * Console.WriteLine(result);
+         */
 
-        // TODO: fix
-        int result = Array.BinarySearch(numbers, key);
-        if (result > 0)
+        do 
         {
-            Console.WriteLine(numbers[result - 1]);
-        }
-        else
-        {
-            do
-            {
-                key--;
-            } while ((result = Array.BinarySearch(numbers, key)) < 1);
-        }
+
+        } while ();
+
     }
 }

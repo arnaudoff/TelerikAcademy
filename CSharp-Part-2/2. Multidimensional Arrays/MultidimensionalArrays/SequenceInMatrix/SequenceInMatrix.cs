@@ -33,5 +33,7 @@ class SequenceInMatrix
             }
             Console.WriteLine();
         }
+
+
     }
 }

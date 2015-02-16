@@ -30,7 +30,6 @@ class FillMatrix
         }
 
         start = 1;
-        int tmpStart = 0;
         for (int cols = 0; cols < matrixSize; cols++)
         {
             if (cols % 2 == 0)
