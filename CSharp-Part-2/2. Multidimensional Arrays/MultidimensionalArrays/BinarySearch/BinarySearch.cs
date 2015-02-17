@@ -20,17 +20,27 @@ class BinarySearch
         }
 
         Array.Sort(numbers);
-        /* 
-         * LINQ solution:
-         * 
-         * var result = numbers.Where(t => t <= key).Max();
-         * Console.WriteLine(result);
-         */
 
-        do 
+        // Using LINQ:
+        var result = numbers.Where(t => t <= key).Max();
+        Console.WriteLine("LINQ result: {0}", result);
+        // Using a more brute-force alike approach
+        int resultantIndex = 0;
+        int finalIndex = 0;
+        do
         {
+            resultantIndex = Array.BinarySearch(numbers, key);
+            if (resultantIndex < 0)
+            {
+                key--;
+            }
+            else
+            {
+                finalIndex = resultantIndex;
+                break;
+            }
+        } while (true);
 
-        } while ();
-
+        Console.WriteLine("Non-LINQ result: {0}", numbers[resultantIndex]);
     }
 }

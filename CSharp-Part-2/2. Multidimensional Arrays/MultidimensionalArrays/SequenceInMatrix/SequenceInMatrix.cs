@@ -4,36 +4,14 @@
  */
 
 using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
 
 class SequenceInMatrix
 {
     static void Main()
     {
-        Console.WriteLine("Enter width: ");
-        int cols = int.Parse(Console.ReadLine());
-        Console.WriteLine("Enter height: ");
-        int rows = int.Parse(Console.ReadLine());
-
-        string[,] numbersMatrix = new string[rows, cols];
-
-        for (int row = 0; row < rows; row++)
-        {
-            string[] currentRow = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            for (int col = 0; col < cols; col++)
-            {
-                numbersMatrix[row, col] = currentRow[col];
-            }
-        }
-
-        for (int row = 0; row < rows; row++)
-        {
-            for (int col = 0; col < cols; col++)
-            {
-                Console.Write("{0} ", numbersMatrix[row, col]);
-            }
-            Console.WriteLine();
-        }
-
-
+        // TODO
     }
 }
