@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Write a method that checks if the element at given position in given array of integers is larger than its two neighbours (when such exist).
+
+using System;
 
 class FirstLargerThanNeighbours
 {
@@ -11,19 +13,33 @@ class FirstLargerThanNeighbours
 
         Console.WriteLine("Enter array contents [{0}]: ", arraySize);
         string[] inputArray = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        Console.WriteLine("Enter array index to check: ");
-        int pos = int.Parse(Console.ReadLine());
-
         for (int i = 0; i < arraySize; i++)
         {
             array[i] = int.Parse(inputArray[i]);
         }
 
-        Console.WriteLine(IsLargerThanNeighbours(array, pos));
+        Console.WriteLine(IsLargerThanNeighbours(array));
     }
 
-    static int IsLargerThanNeighbours(int[] array, int pos)
+    static int IsLargerThanNeighbours(int[] array)
     {
-        
+        bool isLarger = false;
+        int i;
+        for (i = 1; i < array.Length - 1; i++)
+        {
+            if (array[i] > array[i - 1] && array[i] > array[i + 1])
+            {
+                isLarger = true;
+                break;
+            }
+        }
+        if (isLarger)
+        {
+            return i;
+        }
+        else
+        {
+            return -1;
+        }
     }
 }
