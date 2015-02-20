@@ -31,7 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. SolveTasks", "SolveTask
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. IntegerCalculations", "IntegerCalculations\14. IntegerCalculations.csproj", "{92F6F4D3-9E30-499B-90C2-72DE9A6A7493}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberCalculations", "NumberCalculations\NumberCalculations.csproj", "{681891D9-553C-46BB-AA53-F55462E22BFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. NumberCalculations", "NumberCalculations\15. NumberCalculations.csproj", "{681891D9-553C-46BB-AA53-F55462E22BFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

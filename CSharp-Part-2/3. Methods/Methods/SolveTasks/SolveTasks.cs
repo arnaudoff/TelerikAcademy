@@ -1,11 +1,24 @@
-﻿using System;
+﻿/*
+ * Write a program that can solve these tasks:
+ *    Reverses the digits of a number
+ *    Calculates the average of a sequence of integers
+ *    Solves a linear equation a * x + b = 0
+ * Create appropriate methods.
+ * Provide a simple text-based menu for the user to choose which task to solve.
+ * Validate the input data:
+ *    The decimal number should be non-negative
+ *    The sequence should not be empty
+ *    a should not be equal to 0
+ */
+
+using System;
 using System.Linq;
 using System.Threading;
 
 class SolveTasks
 {
     static int currentSelection = 0;
-    private static string[] mainMenu = { "Reverse a number", "Calculate average", "Solve linear equation"};
+    private static string[] mainMenu = { "Reverse a number", "Calculate average", "Solve linear equation", "Exit"};
     static string selector = "> ";
     static void Main()
     {
@@ -13,7 +26,7 @@ class SolveTasks
         {
             PrintMenu(mainMenu);
             HandleInput();
-            Thread.Sleep(200);
+            Thread.Sleep(150);
             Console.Clear();
         }
     }
@@ -37,7 +50,7 @@ class SolveTasks
         return array.Average();
     }
 
-    static int SolveLinearEquation(int a, int b)
+    static double SolveLinearEquation(double a, double b)
     {
         return -b / a;
     }
@@ -74,21 +87,32 @@ class SolveTasks
 
     static void CheckUserChoice()
     {
-        Console.Clear();
         switch (currentSelection)
         {
             case 0:
-                Console.WriteLine("Enter a number: ");
-                Console.WriteLine(Reverse(double.Parse(Console.ReadLine())));
+                Console.Clear();
+                Console.Write("Enter a number: ");
+                double number = double.Parse(Console.ReadLine());
+                while (number < 0)
+                {
+                    Console.Write("Invalid decimal number (should be non-negative). Enter a new one: ");
+                    number = double.Parse(Console.ReadLine());
+                }
+                Console.WriteLine(Reverse(number));
                 Environment.Exit(0);                
                 break;
             case 1:
-                Console.WriteLine("Enter array size: ");
+                Console.Clear();
+                Console.Write("Enter array size: ");
                 int arraySize = int.Parse(Console.ReadLine());
                 int[] array = new int[arraySize];
-                Console.WriteLine("Enter array contents [{0}]: ", arraySize);
+                Console.Write("Enter array contents [{0}]: ", arraySize);
                 string[] inputArray = Console.ReadLine().Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries);
-
+                while (inputArray.Length == 0)
+                {
+                    Console.Write("Invalid sequence. Please enter a non-empty sequence: ");
+                    inputArray = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                }
                 for (int i = 0; i < arraySize; i++)
                 {
                     array[i] = int.Parse(inputArray[i]);
@@ -97,14 +121,21 @@ class SolveTasks
                 Environment.Exit(0);    
                 break;
             case 2:
-                Console.WriteLine("Enter first coefficient: ");
-                int firstCoefficient = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter second coefficient: ");
-                int secondCoefficient = int.Parse(Console.ReadLine());
-                Console.WriteLine(SolveLinearEquation(firstCoefficient, secondCoefficient));
+                Console.Clear();
+                Console.Write("Enter first coefficient: ");
+                double firstCoefficient = double.Parse(Console.ReadLine());
+                while (firstCoefficient == 0)
+                {
+                    Console.Write("Invalid input (a should be a non-zero value). Enter a new coefficient: ");
+                    firstCoefficient = double.Parse(Console.ReadLine());
+                }
+                Console.Write("Enter second coefficient: ");
+                double secondCoefficient = double.Parse(Console.ReadLine());
+                Console.WriteLine("x = {0}", SolveLinearEquation(firstCoefficient, secondCoefficient));
                 Environment.Exit(0);
                 break;
             case 3:
+                Console.Clear();
                 Environment.Exit(0);
                 break;
         }
@@ -118,13 +149,10 @@ class SolveTasks
             if (currentSelection == i)
             {
                 Console.SetCursorPosition(Console.WindowWidth / 2 - menu[i].Length / 2 - selector.Length, Console.WindowHeight / 2 + 2 * i);
-                Console.ForegroundColor = ConsoleColor.Black;
                 Console.Write(selector + menu[i]);
-                Console.ForegroundColor = ConsoleColor.White;
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Black;
                 Console.SetCursorPosition(Console.WindowWidth / 2 - menu[i].Length / 2, Console.WindowHeight / 2 + 2 * i);
                 Console.Write(menu[i]);
             }
