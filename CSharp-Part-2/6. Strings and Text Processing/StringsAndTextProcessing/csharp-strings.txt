@@ -1,0 +1,12 @@
+In C# text is usually represented by a string. A string is esentially a sequence of characters, namely a char array (char[]). The "string" keyword is an alias for System.String and is a reference type, 
+which means it refers to an object on the heap. Strings are immutable, which means the contents of a string cannot be changed to a different value rather than the one they were constructed with.
+The most important methods that can be called on a string are the following:
+
+str.Length - returns the string length
+IndexOf(string str) - finds the first occurence of a character or a substring within the string "str" and returns its position
+LastIndexOf(string str) - finds the last occurence of a character or a substring within the string "str" and returns its position
+str.Substring(int startIndex, int length) -  extracts a substring from "str" with starting index "startIndex" and length "length"
+str.Replace(string, string) – replaces all occurrences of given string with another and produces new string as result (because strings are immutable)
+str.Remove(index, length) – deletes part of a string and produces new string as result (because strings are immutable)
+str.ToLower(); str.ToUpper() - produces a new string with only lowercase/uppercase characters
+str.Trim() - produces a new string with trimmed whitespace

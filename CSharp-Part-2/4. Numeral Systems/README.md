@@ -16,7 +16,7 @@ Homework: Numeral Systems
 ### Problem 5. Hexadecimal to binary
 *	Write a program to convert hexadecimal numbers to binary numbers (directly).
 
-### Problem 6. binary to hexadecimal
+### Problem 6. Binary to hexadecimal
 *	Write a program to convert binary numbers to hexadecimal numbers (directly).
 
 ### Problem 7. One system to any other
