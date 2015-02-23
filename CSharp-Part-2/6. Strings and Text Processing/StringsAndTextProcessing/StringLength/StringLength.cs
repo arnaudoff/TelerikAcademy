@@ -4,10 +4,34 @@
  */
 
 using System;
+using System.Text;
 
 class StringLength
 {
     static void Main()
     {
+        Console.WriteLine("Enter a string: ");
+        string inputStr = Console.ReadLine();
+        
+        while (inputStr.Length > 20)
+        {
+            Console.Write("Wrong amount of characters entered. Enter a new string: ");
+            inputStr = Console.ReadLine();
+        }
+
+        if (inputStr.Length < 20)
+        {
+            StringBuilder fixedOutput = new StringBuilder();
+            fixedOutput.Append(inputStr);
+            for (int i = inputStr.Length; i < 20; i++)
+            {
+                fixedOutput.Append('*');
+            }
+            Console.WriteLine(fixedOutput);
+        }
+        else
+        {
+            Console.WriteLine("No changes to the original string \"{0}\" were made.", inputStr);
+        }
     }
 }
