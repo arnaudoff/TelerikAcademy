@@ -6,34 +6,51 @@
  */
 
 using System;
+using System.Linq;
 using System.Text;
 
 class EncodeAndDecode
 {
     static void Main()
     {
-        string res = Encode("test", "gosho");
-        Console.WriteLine(res);
-        Console.WriteLine(Decode(res, "gosho"));
+        Console.Write("Enter text: ");
+        string inputText = Console.ReadLine();
+
+        Console.Write("Enter key (cipher): ");
+        string inputKey = Console.ReadLine();
+
+        string encodedStr = Encode_Decode(inputText, inputKey);
+        Console.WriteLine("Encoded string: ");
+        Console.WriteLine(encodedStr);
+
+        string decodedStr = Encode_Decode(encodedStr, inputKey);
+        Console.WriteLine("Decoded string: ");
+        Console.WriteLine(decodedStr);
     }
 
-    static string Encode(string text, string key)
+    // This method takes advantage of the "XOR cipher" so it can encode as well as decode a given string.
+    static string Encode_Decode(string text, string key)
     {
-        StringBuilder outputStr = new StringBuilder();
-        for (int i = 0; i < text.Length; i++)
+        // Fixes the key length
+        StringBuilder fixedKey = new StringBuilder();
+        fixedKey.Append(key);
+        if (key.Length < text.Length)
         {
-            outputStr.Append(text[i] ^ key[i]);
+            fixedKey.Append(String.Concat(Enumerable.Repeat(key, (text.Length / key.Length) - 1)));
+            for (int i = 0; i < text.Length % key.Length; i++)
+            {
+                fixedKey.Append(key[i]);
+            }
         }
-        return outputStr.ToString();
-    }
-
-    static string Decode(string text, string key)
-    {
-        StringBuilder outputStr = new StringBuilder();
-        for (int i = 0; i < text.Length; i++)
+        StringBuilder resultantStr = new StringBuilder();
+        int inputLetter;
+        int keyLetter;
+        for (int i = 0; i < text.Length; i++ )
         {
-            outputStr.Append(text[i] ^ key[i]);
+            inputLetter = (int)text[i];
+            keyLetter = (int)fixedKey[i];
+            resultantStr.Append((char)(fixedKey[i] ^ text[i]));
         }
-        return outputStr.ToString();
+        return resultantStr.ToString();
     }
 }

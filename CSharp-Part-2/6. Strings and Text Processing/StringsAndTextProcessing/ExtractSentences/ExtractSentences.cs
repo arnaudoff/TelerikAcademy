@@ -12,11 +12,18 @@ class ExtractSentences
         string text = "We are living in a yellow submarine. We don't have anything else. Inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.";
 
         string[] splitText = text.Split(new string[] {". "}, StringSplitOptions.None);
-        int currentIndex = 0;
-        foreach (var str in splitText)
+        for (int i = 0; i < splitText.Length; i++)
         {
-            // wtf?
+            if (Regex.IsMatch(splitText[i], string.Format("[^a-zA-Z]{0}[^a-zA-Z]", word), RegexOptions.IgnoreCase))
+            {
+                Console.Write(splitText[i]);
+                if (i != splitText.Length - 1)
+                {
+                    Console.Write(". ");
+                }
+            }
         }
+        Console.WriteLine();
     }
 
 

@@ -5,6 +5,7 @@
 
 using System;
 using System.Globalization;
+using System.Text;
 
 class DateInBulgarian
 {
@@ -15,7 +16,10 @@ class DateInBulgarian
         DateTime date = DateTime.ParseExact(inputStr, "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
         DateTime newDate = date.AddHours(6).AddMinutes(30);
         Console.WriteLine("Date {0}", newDate.ToString("dd.MM.yyyy HH:mm:ss"));
-        Console.WriteLine("Day of the week: {0}", newDate.DayOfWeek);
+        System.Threading.Thread.CurrentThread.CurrentCulture =
+            new System.Globalization.CultureInfo("bg-BG");
+        Console.OutputEncoding = Encoding.UTF8;
+        Console.WriteLine(DateTimeFormatInfo.CurrentInfo.GetDayName(newDate.DayOfWeek));
 
     }
 }
