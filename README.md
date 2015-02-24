@@ -16,3 +16,6 @@ Homework, classwork &amp; exam preparation for the academy.
        * Arrays
        * Multidimensional arrays
        * Methods
+       * Numeral Systems
+       * Using classes and objects
+       * Strings and text processing
