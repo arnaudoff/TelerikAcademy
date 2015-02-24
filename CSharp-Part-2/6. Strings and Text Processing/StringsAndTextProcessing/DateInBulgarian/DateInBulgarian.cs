@@ -4,10 +4,18 @@
  */
 
 using System;
+using System.Globalization;
 
 class DateInBulgarian
 {
     static void Main()
     {
+        Console.WriteLine("Enter a date: ");
+        string inputStr = Console.ReadLine();
+        DateTime date = DateTime.ParseExact(inputStr, "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+        DateTime newDate = date.AddHours(6).AddMinutes(30);
+        Console.WriteLine("Date {0}", newDate.ToString("dd.MM.yyyy HH:mm:ss"));
+        Console.WriteLine("Day of the week: {0}", newDate.DayOfWeek);
+
     }
 }

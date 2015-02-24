@@ -6,10 +6,34 @@
  */
 
 using System;
+using System.Text;
 
 class EncodeAndDecode
 {
     static void Main()
     {
+        string res = Encode("test", "gosho");
+        Console.WriteLine(res);
+        Console.WriteLine(Decode(res, "gosho"));
+    }
+
+    static string Encode(string text, string key)
+    {
+        StringBuilder outputStr = new StringBuilder();
+        for (int i = 0; i < text.Length; i++)
+        {
+            outputStr.Append(text[i] ^ key[i]);
+        }
+        return outputStr.ToString();
+    }
+
+    static string Decode(string text, string key)
+    {
+        StringBuilder outputStr = new StringBuilder();
+        for (int i = 0; i < text.Length; i++)
+        {
+            outputStr.Append(text[i] ^ key[i]);
+        }
+        return outputStr.ToString();
     }
 }

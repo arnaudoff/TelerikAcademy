@@ -9,5 +9,15 @@ class FormatNumber
 {
     static void Main()
     {
+        Console.Write("Enter a number: ");
+        int number = int.Parse(Console.ReadLine());
+        // Print as decimal
+        Console.WriteLine("{0,15}", number.ToString("d"));
+        // Print as hexadecimal
+        Console.WriteLine("{0,15}", number.ToString("x"));
+        // Print as percentage
+        Console.WriteLine("{0,15}", number.ToString("P"));
+        // Print with its scientific notation
+        Console.WriteLine("{0,15}", number.ToString("e"));
     }
 }

@@ -11,17 +11,13 @@ class ExtractSentences
         string word = "in";
         string text = "We are living in a yellow submarine. We don't have anything else. Inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.";
 
-        // TODO.
-        Console.WriteLine(Regex.IsMatch(text, string.Format("\b{0}\b", word)));
-        string[] sentencesArray = text.Split(new string[] { ". " }, StringSplitOptions.None);
-        StringBuilder finalStr = new StringBuilder();
-        foreach (string sentence in sentencesArray)
+        string[] splitText = text.Split(new string[] {". "}, StringSplitOptions.None);
+        int currentIndex = 0;
+        foreach (var str in splitText)
         {
-            if (Regex.IsMatch(sentence, string.Format("\b{0}\b", word)))
-            {
-                finalStr.Append(string.Format("{0}. ", sentence));
-            }
+            // wtf?
         }
-        //Console.WriteLine(finalStr);
     }
+
+
 }
