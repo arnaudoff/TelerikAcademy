@@ -7,43 +7,22 @@ class SeriesOfLetters
 {
     static void Main()
     {
-        string inputStr = "aaaaabbbbbcdddeeeedssaa";
 
-        // TODO: fix this
+        Console.Write("Enter a string: ");
+        string inputStr = Console.ReadLine();
         StringBuilder outputStr = new StringBuilder();
-        int currentPos = 1;
-        int currentChar = inputStr[0];
-        int currentCharCount = 1;
-        bool isSeries = false;
-        while (currentPos < inputStr.Length)
+        char lastChar = '\0';
+
+        foreach (var currentChr in inputStr)
         {
-            if (inputStr[currentPos] == currentChar)
+            if (currentChr != lastChar)
             {
-                isSeries = true;
-                currentCharCount++;
+                outputStr.Append(currentChr);
             }
-            else
-            {
-                if (isSeries)
-                {
-                    isSeries = false;
-                    outputStr.Append(inputStr[currentPos - 1]);
-                    currentChar = inputStr[currentPos];
-                    // Append if single
-                    if (inputStr[currentPos] != currentChar)
-                    {
-                        outputStr.Append(currentChar);
-                        currentChar = inputStr[currentPos + 1];
-                    }
-                    currentCharCount = 1;
-                }
-                else
-                {
-                    outputStr.Append(inputStr[currentPos]);
-                }
-            }
-            currentPos++;
+
+            lastChar = currentChr;
         }
-        Console.WriteLine(outputStr.ToString());
+
+        Console.WriteLine(outputStr);
     }
 }
