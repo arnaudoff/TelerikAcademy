@@ -19,3 +19,5 @@ Homework, classwork &amp; exam preparation for the academy.
        * Numeral Systems
        * Using classes and objects
        * Strings and text processing
+       * Exception handling
+       * Text files
