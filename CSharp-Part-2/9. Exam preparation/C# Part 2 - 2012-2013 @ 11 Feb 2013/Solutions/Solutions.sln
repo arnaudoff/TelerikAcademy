@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. NineGagNumbers", "NineGagNumbers\01. NineGagNumbers.csproj", "{3111F444-68F3-46FC-B5E3-41A6C28C48D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. SpecialValue", "SpecialValue\02. SpecialValue.csproj", "{3EA3B3D4-4353-47E4-A449-0B56076918B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. KukataIsDancing", "KukataIsDancing\03. KukataIsDancing.csproj", "{2FFD5C5A-B85B-4A77-B6E1-DE7F57827AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. FakeTextMarkupLanguage", "FakeTextMarkupLanguage\04. FakeTextMarkupLanguage.csproj", "{DA85F771-B916-4F84-8A21-6399ADB1A157}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3111F444-68F3-46FC-B5E3-41A6C28C48D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3111F444-68F3-46FC-B5E3-41A6C28C48D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3111F444-68F3-46FC-B5E3-41A6C28C48D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3111F444-68F3-46FC-B5E3-41A6C28C48D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA3B3D4-4353-47E4-A449-0B56076918B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA3B3D4-4353-47E4-A449-0B56076918B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA3B3D4-4353-47E4-A449-0B56076918B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA3B3D4-4353-47E4-A449-0B56076918B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FFD5C5A-B85B-4A77-B6E1-DE7F57827AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFD5C5A-B85B-4A77-B6E1-DE7F57827AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFD5C5A-B85B-4A77-B6E1-DE7F57827AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFD5C5A-B85B-4A77-B6E1-DE7F57827AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA85F771-B916-4F84-8A21-6399ADB1A157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA85F771-B916-4F84-8A21-6399ADB1A157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA85F771-B916-4F84-8A21-6399ADB1A157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA85F771-B916-4F84-8A21-6399ADB1A157}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
