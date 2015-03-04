@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. KaspichanNumbers", "Kas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. GreedyDwarf", "GreedyDwarf\02. GreedyDwarf.csproj", "{8BAFEB17-2B02-450F-8125-CB3B04023EDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Slides", "Slides\03. Slides.csproj", "{D82E178E-B76F-44E7-B651-068852692C29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8BAFEB17-2B02-450F-8125-CB3B04023EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BAFEB17-2B02-450F-8125-CB3B04023EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BAFEB17-2B02-450F-8125-CB3B04023EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D82E178E-B76F-44E7-B651-068852692C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82E178E-B76F-44E7-B651-068852692C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D82E178E-B76F-44E7-B651-068852692C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D82E178E-B76F-44E7-B651-068852692C29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

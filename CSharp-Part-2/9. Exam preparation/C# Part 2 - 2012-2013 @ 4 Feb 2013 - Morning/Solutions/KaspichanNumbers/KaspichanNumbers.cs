@@ -26,20 +26,13 @@ class KaspichanNumbers
         }
 
         string result = string.Empty;
-        // Silly but eh.
-        if (number == 0)
+        while (number > 0)
         {
-            Console.WriteLine("A");
+            ulong digit = number % 256;
+            result = digitsDict[digit] + result;
+            number /= 256;
         }
-        else
-        {
-            while (number > 0)
-            {
-                ulong digit = number % 256;
-                result = digitsDict[digit] + result;
-                number /= 256;
-            }
-            Console.WriteLine(result);
-        }
+
+        Console.WriteLine(result);
     }
 }
