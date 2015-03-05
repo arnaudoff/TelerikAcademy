@@ -11,13 +11,13 @@ Homework, classwork &amp; exam preparation for the academy.
        * Console I/O
        * Conditional statements
        * Loops
-       * Exam Preparation
     * CSharp-Part-2
        * Arrays
        * Multidimensional arrays
        * Methods
-       * Numeral Systems
+       * Numeral systems
        * Using classes and objects
        * Strings and text processing
        * Exception handling
        * Text files
+    * OOP
