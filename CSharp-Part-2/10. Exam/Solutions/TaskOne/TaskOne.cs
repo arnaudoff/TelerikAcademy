@@ -21,7 +21,6 @@ class First
         }
         Console.WriteLine("{0} = {1}", convertToBase19(sum, digitsDict), sum);
     }
-
     static string convertToBase19(int number, char[] digits)
     {
         string result = string.Empty;
@@ -33,7 +32,6 @@ class First
         }
         return result;
     }
-
     static int stringToDecimal(string inputStr, char[] digits)
     {
         int res = 0;

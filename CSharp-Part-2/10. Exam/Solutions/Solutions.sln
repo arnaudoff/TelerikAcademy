@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. TaskOne", "First\01. TaskOne.csproj", "{1C1A5E4A-E418-4C45-B79A-419E9D6DD8DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. TaskOne", "TaskOne\01. TaskOne.csproj", "{1C1A5E4A-E418-4C45-B79A-419E9D6DD8DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. TaskTwo", "Second\02. TaskTwo.csproj", "{CC248C38-394D-461B-BDFB-0E80B19C3CC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. TaskTwo", "TaskTwo\02. TaskTwo.csproj", "{CC248C38-394D-461B-BDFB-0E80B19C3CC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. TaskThree", "Third\03. TaskThree.csproj", "{41D221EE-A82E-4F36-8223-0FB078463B6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. TaskThree", "TaskThree\03. TaskThree.csproj", "{41D221EE-A82E-4F36-8223-0FB078463B6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
