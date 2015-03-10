@@ -1,22 +1,38 @@
 ﻿namespace MobilePhone
 {
     using System;
+    using System.Text;
 
-    class Battery
+    public class Battery
     {
         private string model;
-        private uint hoursIdle;
-        private uint hoursTalk;
-        private BatteryType batteryType;
+        private uint? hoursIdle;
+        private uint? hoursTalk;
 
-        public enum BatteryType
+        public Battery(Type batteryType)
+        {
+            this.BatteryType = batteryType;
+            this.HoursIdle = null;
+            this.HoursTalk = null;
+        }
+        public Battery(Type batteryType, uint? hoursIdle, uint? hoursTalk)
+        {
+            this.BatteryType = batteryType;
+            this.HoursIdle = hoursIdle;
+            this.HoursTalk = hoursTalk;
+
+        }
+
+        // Not quite sure whether this is the right place for the enum.
+        public enum Type
         {
             Li_Ion,
             NiMH,
             NiCd
         }
 
-        public BatteryType BatteryType { get; set; }
+        public Type BatteryType { get; set; }
+
         public string Model
         {
             get 
@@ -36,7 +52,7 @@
             }
         }
 
-        public uint HoursTalk
+        public uint? HoursTalk
         {
             get 
             {
@@ -55,7 +71,7 @@
             }
         }
 
-        public uint HoursIdle
+        public uint? HoursIdle
         {
             get 
             {
@@ -72,6 +88,31 @@
                     this.hoursIdle = value;
                 }
             }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append(this.BatteryType);
+
+            if (this.HoursIdle != null)
+            {
+                sb.Append(" - ");
+                sb.Append(this.HoursIdle);
+                sb.Append(" hour(s) idle");
+            }
+            if (this.HoursTalk != null)
+            {
+                if (this.HoursIdle != null)
+                {
+                    sb.Append(", ");
+                }
+                sb.Append(this.HoursTalk);
+                sb.Append(" hour(s) of talking");
+            }
+
+            return sb.ToString();
         }
     }
 }

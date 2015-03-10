@@ -1,13 +1,14 @@
 ﻿namespace MobilePhone
 {
     using System;
+    using System.Text;
 
-    class Display
+    public class Display
     {
         private float size;
-        private int numberOfColors;
+        private uint numberOfColors;
 
-        public Display(float size, int numberOfColors)
+        public Display(float size, uint numberOfColors)
         {
             this.Size = size;
             this.numberOfColors = numberOfColors;
@@ -30,7 +31,7 @@
             }
         }
 
-        public int NumberOfColors
+        public uint NumberOfColors
         {
             get
             {
@@ -45,6 +46,15 @@
 
                 this.numberOfColors = value;
             }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder output = new StringBuilder();
+
+            output.Append(string.Format("{0} inches supporting {1} colors.", this.Size, this.NumberOfColors));
+
+            return output.ToString();
         }
     }
 }
