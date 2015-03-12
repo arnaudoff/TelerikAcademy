@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Point", "Point\Point.csproj", "{91D1CBA4-2388-4758-B7A9-197C69B5DCB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Point", "Point\01. Point.csproj", "{91D1CBA4-2388-4758-B7A9-197C69B5DCB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. GenericList", "GenericList\02. GenericList.csproj", "{0AF04170-AC88-49A3-9F87-105478051B70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{91D1CBA4-2388-4758-B7A9-197C69B5DCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91D1CBA4-2388-4758-B7A9-197C69B5DCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91D1CBA4-2388-4758-B7A9-197C69B5DCB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF04170-AC88-49A3-9F87-105478051B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF04170-AC88-49A3-9F87-105478051B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF04170-AC88-49A3-9F87-105478051B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF04170-AC88-49A3-9F87-105478051B70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
