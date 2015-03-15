@@ -3,7 +3,7 @@
     using System;
     using System.Text;
 
-    public class Matrix<T> where T : IComparable
+    public class Matrix<T> where T : IComparable<T>
     {
         private const string delimiter = " ";
         private T[,] matrix;
@@ -121,18 +121,6 @@
             }
 
             return res;
-        }
-
-        public void Fill()
-        {
-            for (int row = 0; row < this.Rows; row++)
-            {
-                string[] currentRow = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                for (int col = 0; col < this.Cols; col++)
-                {
-                    this.matrix[row, col] = (dynamic)currentRow[col];
-                }
-            }
         }
 
         public static bool operator true(Matrix<T> matrix)

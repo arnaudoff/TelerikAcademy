@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Test
+    public class Test
     {
         static void Main()
         {
