@@ -21,3 +21,6 @@ Homework, classwork &amp; exam preparation for the academy.
        * Exception handling
        * Text files
     * OOP
+       * Defining classes - Part 1
+       * Defining classes - Part 2
+       * Extension methods, delegates, lambda & LINQ
