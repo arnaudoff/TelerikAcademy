@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilderExtensions", "StringBuilderExtensions\StringBuilderExtensions.csproj", "{4CFB1577-5F52-4EDB-8843-C5721EFA7A32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. StringBuilderExtensions", "StringBuilderExtensions\01. StringBuilderExtensions.csproj", "{4CFB1577-5F52-4EDB-8843-C5721EFA7A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. IEnumerableExtensions", "IEnumerableExtensions\02. IEnumerableExtensions.csproj", "{7DF109F7-8716-45CD-A195-2EC4D1520FD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4CFB1577-5F52-4EDB-8843-C5721EFA7A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CFB1577-5F52-4EDB-8843-C5721EFA7A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CFB1577-5F52-4EDB-8843-C5721EFA7A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF109F7-8716-45CD-A195-2EC4D1520FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF109F7-8716-45CD-A195-2EC4D1520FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF109F7-8716-45CD-A195-2EC4D1520FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF109F7-8716-45CD-A195-2EC4D1520FD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
