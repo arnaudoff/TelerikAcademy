@@ -8,9 +8,8 @@
         static void Main()
         {
             List<int> numbers = new List<int>();
-            numbers.Add(10);
-            numbers.Add(10);
-            numbers.Add(12);
+            numbers.Add(5);
+            numbers.Add(6);
             Console.WriteLine("Max: {0}", numbers.Max());
             Console.WriteLine("Min: {0}", numbers.Min());
             Console.WriteLine("Average: {0}", numbers.Average());
