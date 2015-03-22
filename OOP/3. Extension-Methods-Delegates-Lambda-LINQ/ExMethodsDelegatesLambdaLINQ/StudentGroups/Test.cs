@@ -9,9 +9,9 @@
         static void Main()
         {
             List<Student> students = new List<Student>();
-            students.Add(new Student("Gosho", "Ivanov", "123105", 2, "0288888888", "gosho_svalq4a@abv.bg", new[] { 4.50f, 3.20f, 4.20f, 6.00f }));
-            students.Add(new Student("Pesho", "Petkanov", "123106", 1, "0887628189", "pesho_igra4a@mail.bg", new[] { 2.50f, 2.75f, 4.25f, 5.50f }));
-            students.Add(new Student("Asen", "Qnkov", "123106", 2, "0288388383", "asenkata493284823984@gmail.com", new[] { 2.00f, 2.00f, 2.50f, 2.50f }));
+            students.Add(new Student("Gosho", "Ivanov", "123105", 3, "0288888888", "gosho_svalq4a@abv.bg", new[] { 4.50f, 3.20f, 4.20f, 6.00f }));
+            students.Add(new Student("Pesho", "Petkanov", "123106", 2, "0887628189", "pesho_igra4a@mail.bg", new[] { 2.50f, 2.75f, 4.25f, 5.50f }));
+            students.Add(new Student("Asen", "Qnkov", "123106", 3, "0288388383", "asenkata493284823984@gmail.com", new[] { 2.00f, 2.00f, 2.50f, 2.50f }));
 
             /*
              * Create a List<Student> with sample students. Select only the students that are from group number 2.
@@ -92,6 +92,47 @@
             foreach (var student in marksByYearResult)
             {
                 Console.WriteLine("First name: {0} Last name: {1} Marks: {2}", student.FirstName, student.LastName, String.Join(", ", student.Marks));
+            }
+
+            // Extract all students from "Mathematics" department. Use the Join operator.
+            var groups = new List<Group>
+			             {
+							 new Group(1, "Informatics"),
+                             new Group(2, "Computer science"),
+							 new Group(3, "Mathematics"),
+							 new Group(4, "Software engineering"),
+			             };
+
+            var mathsDepartmentResult = from student in students
+                                        join group_ in groups on student.GroupNumber equals group_.GroupNumber
+                                        where group_.DepartmentName == "Mathematics"
+                                        select student;
+
+            Console.WriteLine("\nStudents from the \"Mathematics\" deparment: \n");
+            foreach (var student in mathsDepartmentResult)
+            {
+                Console.WriteLine("First name: {0} Last name: {1}", student.FirstName, student.LastName);
+            }
+            
+            // Create a program that extracts all students grouped by GroupName and then prints them to the console. Use LINQ.
+
+            var groupsResult = from stud in students
+                               group stud by stud.GroupNumber;
+
+            Console.WriteLine("\nStudents by groups (LINQ): \n");
+            foreach (var group in groupsResult)
+            {
+                    Console.WriteLine(String.Format("Group {0}: {1}", group.ElementAt(0).GroupNumber, String.Join(", ", group)));
+            }
+
+            // Rewrite the previous using extension methods.
+
+            var groupsResultExtensions = students.GroupBy(x => x.GroupNumber);
+
+            Console.WriteLine("\nStudents by groups (Extensions): \n");
+            foreach (var group in groupsResultExtensions)
+            {
+                Console.WriteLine(String.Format("Group {0}: {1}", group.ElementAt(0).GroupNumber, String.Join(", ", group)));
             }
         }
     }

@@ -4,6 +4,7 @@ namespace StudentGroups
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
     using System.Text.RegularExpressions;
 
     class Student
@@ -133,5 +134,10 @@ namespace StudentGroups
         }
 
         public List<float> Marks { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("{0} {1}", this.FirstName, this.LastName);
+        }
     }
 }
