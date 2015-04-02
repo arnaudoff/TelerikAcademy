@@ -24,3 +24,6 @@ Homework, classwork &amp; exam preparation for the academy.
        * Defining classes - Part 1
        * Defining classes - Part 2
        * Extension methods, delegates, lambda & LINQ
+       * OOP Principles - Part 1
+       * OOP Principles - Part 2
+       * CTS in .NET
