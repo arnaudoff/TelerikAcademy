@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ArmyOfCreatures.Logic.Battles.BattleManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAACAAAAAAACgMQAAEAAAAAAAAQAEAA=</HashCode>
+      <FileName>Logic\Battles\BattleManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Battles.CreatureIdentifier" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAQAACAAAACAAAAAAAA=</HashCode>
+      <FileName>Logic\Battles\CreatureIdentifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Battles.CreaturesInBattle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAADAAEAAEAAEQgEAAAAAAAAABAAAAgUAA=</HashCode>
+      <FileName>Logic\Battles\CreaturesInBattle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Creatures.Angel">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Creatures\Angel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Creatures.Archangel">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Creatures\Archangel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Creatures.ArchDevil">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Creatures\ArchDevil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Creatures.Behemoth">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Creatures\Behemoth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Creatures.Creature">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAQCAAAAAEAAAQIAAAAIAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Logic\Creatures\Creature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Creatures.Devil" Collapsed="true">
+    <Position X="9.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Creatures\Devil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Specialties.AddDefenseWhenSkip">
+    <Position X="0.5" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Logic\Specialties\AddDefenseWhenSkip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Specialties.DoubleDefenseWhenDefending">
+    <Position X="5.5" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Logic\Specialties\DoubleDefenseWhenDefending.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Specialties.Hate">
+    <Position X="10.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Specialties\Hate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Specialties.ReduceEnemyDefenseByPercentage">
+    <Position X="3" Y="8" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Specialties\ReduceEnemyDefenseByPercentage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Specialties.Resurrection">
+    <Position X="8" Y="8" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Specialties\Resurrection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArmyOfCreatures.Logic.Specialties.Specialty">
+    <Position X="4.75" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAgAAAAAAAEEAAAAAACAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Logic\Specialties\Specialty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ArmyOfCreatures.Logic.Battles.IBattleManager" Collapsed="true">
+    <Position X="12" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAQAEAA=</HashCode>
+      <FileName>Logic\Battles\IBattleManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ArmyOfCreatures.Logic.Battles.ICreaturesInBattle" Collapsed="true">
+    <Position X="14" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAADAAAAAEAAAQgEAAAAAAAAABAAAAgEAA=</HashCode>
+      <FileName>Logic\Battles\ICreaturesInBattle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
