@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Registration form</title>
+	</head>
+	<body>
+		<form>
+			<table border="1" style="border-collapse: collapse;">
+				<tr>
+					<td align="center" width="150px"><label for="last-name"><b>Last Name</b></label></td>
+					<td width="260px"><input style="display: inline-block; width: 240px;" id="last-name" type="text" required /></td>
+				</tr>
+				<tr>
+					<td align="center"><label for="first-name"><b>First Name</b></label></td>
+					<td><input style="display: inline-block; width: 240px;" id="first-name" type="text" required /></td>
+				</tr>
+				<tr>
+					<td align="center"><label for="address"><b>Address</b></label></td>
+					<td><textarea id="address" style="display: inline-block; width: 230px; height: 65px;"></textarea></td>
+				</tr>
+				<tr>
+					<td align="center">
+						<label for="city">
+							<b>City</b>
+						</label>
+					</td>
+					<td>
+						<input style="display: inline-block; width: 170px;" id="city" type="text" required />
+						<label for="state">State</label>
+						<input style="display: inline-block; width: 40px;" id="state" type="text" required />
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><label for="postal-code"><b>ZIP/Postal Code</b></label></td>
+					<td><input type="text" id="postal-code" style="display: inline-block; width: 80px;" /></td>
+				</tr>
+				<tr>
+					<td align="center"><label for="country"><b>Country</b></label></td>
+					<td>
+						<select name="country" id="country" style="width: 170px">
+							<option value="Bulgaria" selected="selected">Bulgaria</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="phone">
+							<b>Phone(country code,<br />
+								area code, number)</b>
+						</label>
+					</td>
+					<td>
+						(+<input style="display: inline-block; width: 50px;" id="phone" type="number" required />)
+						<input style="display: inline-block; width: 50px;" id="area-code" type="number" required />
+						<input style="display: inline-block; width: 100px;" id="number" type="number" required />
+					</td>
+				</tr>
+				<tr>
+					<td align="center" width="150px"><label for="email"><b>Email</b></label></td>
+					<td width="260px"><input style="display: inline-block; width: 240px;" id="email" type="email" required /></td>
+				</tr>
+				<tr>
+					<td align="center" width="150px"><label for="birth-date"><b>Birth date</b></label></td>
+					<td width="260px"><input style="display: inline-block; width: 240px;" id="birth-date" type="date" required /></td>
+				</tr>
+				<tr>
+					<td align="center"><label for="gender"><b>Gender</b></label></td>
+					<td>
+						<select name="gender" id="gender" style="width: 70px">
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><label for="starting-date"><b>Starting date</b></label></td>
+					<td>
+						<input name="starting-date" id="starting-date" type="radio" value="Spring 2015" />Spring 2015
+						<input name="starting-date" id="starting-date" type="radio" value="Summer 2015" />Summer 2015
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><label for="comments-questions"><b>Comments/Questions</b></label></td>
+					<td><textarea id="comments-questions" style="display: inline-block; width: 230px; height: 95px;"></textarea></td>
+				</tr>
+				<tr bgcolor="#87ceeb">
+					<td colspan="2" align="center">
+						<input type="button" id="form-submit" value="Submit" />
+						<input type="reset" id="form-reset" value="Clean This Form" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

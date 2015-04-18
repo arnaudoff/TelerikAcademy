@@ -1,0 +1,49 @@
+thead tr th {
+    border: 2px solid;
+    font-size: 25px;
+}
+
+.price {
+    text-align: center;
+}
+
+.ranges {
+    font-size: 25px;
+}
+
+.ranges td {
+    padding: 30px;
+}
+
+.macbooks {
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    font-family: Verdana;
+}
+
+.ranges {
+    font-family: Verdana;
+    border: 2px solid;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 26px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    color: #38c0f3;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: none;
+} 
+
+fieldset {
+    border: 2px #000 solid;
+}           
