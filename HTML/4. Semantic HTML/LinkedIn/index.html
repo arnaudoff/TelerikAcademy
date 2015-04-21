@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <!-- HTML5 fix -->
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->	
+	<meta charset="UTF-8">
+	<title>LinkedIn</title>
+</head>
+<body>
+	<header>
+		<h2><a href="#">LinkedIn</a></h2>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">What is LinkedIn?</a></li>
+				<li><a href="#">Join Today</a></li>
+				<li style="padding-left: 15px;">
+				<form>					
+					<fieldset>
+						<legend>Sign In</legend>
+						<ul list-style="disc">
+							<li>
+								<label for="email-signin">Email:</label>
+								<input id="email-signin" type="email" required />
+							</li>
+							<li>
+								<label for="password-signin">Password:</label>
+								<input id="password-signin" type="password" required />
+							</li>
+							<li>
+								<input type="submit" value="Sign In" />
+							</li>
+						</ul>
+					</fieldset>
+				</form>					
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<hr />
+	<section>
+		<header>
+			<h1>Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities</h1>
+			<ul>
+				<li>Stay informed about your contacts and industry</li>
+				<li>Find the people &amp; knowledge you need to achieve your goals</li>
+				<li>Control your professional identity online</li>
+			</ul>
+			<h2>Join LinkedIn Today</h2>
+		</header>
+		<form>
+			<fieldset>
+				<legend>Sign Up</legend>
+				<ul>
+					<li>
+						<label for="first-name">First Name:</label><br />
+						<input id="first-name" type="text" required />
+					</li>
+					<li>
+						<label for="last-name">Last Name:</label><br />
+						<input id="last-name" type="text" required />
+					</li>
+					<li>
+						<label for="email-signup">Email:</label><br />
+						<input id="email-signup" type="email" required />
+					</li>
+					<li>
+						<label for="password-signup">Password:</label><br />
+						<input id="password-signup" type="password" minlength="6" required /><br />
+						6 or more characters
+					</li>
+				</ul>
+				<input type="submit" value="Join Now" /><a href="#">*</a>
+				<br />
+				<br />
+				Already on LinkedIn? <a href="#">Sign in.</a>
+			</fieldset>				
+		</form>
+	</section>
+	<br />
+	<section>
+		<header>
+			<h3>Search for someone by name:</h3>
+		</header>
+		<form>
+			<ul>
+				<li>
+					<label for="first-name-search">First Name:</label>
+					<input id="first-name-search" type="text" placeholder="First Name" required />
+				</li>
+				<li>
+					<label for="last-name-search">Last Name:</label>
+					<input id="last-name-search" type="text" placeholder="Last Name" required />
+				</li>
+			</ul>
+			<input type="submit" value="Go" />
+		</form>
+	</section>
+</body>
+</html>
