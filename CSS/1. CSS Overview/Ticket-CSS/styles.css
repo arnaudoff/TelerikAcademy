@@ -1,0 +1,52 @@
+/* Original: https://cloud.githubusercontent.com/assets/3619393/7183745/e7c7f452-e461-11e4-82d9-86fd12a266f6.png */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+    color: #FFF2B3;
+    text-decoration: none;
+}
+
+table {
+    width: 300px;
+    padding-right: 79px;
+    background-color: #595959;
+    font-family: 'Arial';
+    font-size: 11px;
+    color: #A4AEAC;
+}
+
+table th {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 6px;
+}
+
+table td {
+    padding: 6px;
+}
+
+table tr td:first-child {
+    color: #ffffff;
+    font-style: italic;
+    padding-left: 1px;
+}
+
+#support-status {
+    font-weight: bold;
+    color: #DE1720;
+}
+
+#user-status {
+    font-size: 20px;
+    color: #76B77F;
+}
+
+#ticket-status {
+    font-weight: bold;
+    color: #CE6B43;
+}
