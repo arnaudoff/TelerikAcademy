@@ -1,0 +1,12 @@
+/* Original: https://cloud.githubusercontent.com/assets/3619393/7184113/1f78fcf0-e464-11e4-80f4-2285c7a4a765.png */
+
+body {
+	width: 800px;
+}
+
+div {
+    background: #000;
+    border-radius: 60px;
+    border: 1px solid #ff0000;
+    padding-right: 7%;
+}

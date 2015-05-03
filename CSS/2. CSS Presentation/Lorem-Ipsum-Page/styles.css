@@ -1,0 +1,24 @@
+/* Original: https://cloud.githubusercontent.com/assets/3619393/7184115/1f7aadf2-e464-11e4-8a20-a169f5c5aa89.png */
+
+body {
+    font-family: 'Consolas';
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: Edwardian Script ITC;
+    src: url(edwardian-script-itc-1361504162.ttf);
+}
+
+p {
+    color: #0094ff;
+}
+
+    p:first-line {
+        font-weight: bold;
+    }
+
+    p:first-letter {
+        font-family: Edwardian Script ITC;
+        font-size: 2.8em;
+    }

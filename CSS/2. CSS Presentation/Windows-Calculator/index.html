@@ -1,0 +1,137 @@
+<!-- Original: https://cloud.githubusercontent.com/assets/3619393/7184116/1f7bdf2e-e464-11e4-9fef-12afd3e70765.png -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Windows calculator</title>
+	<link rel="stylesheet" href="styles.css"/>	
+</head>
+<body>
+	<div id="container">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">View</a></li>
+					<li><a href="#">Edit</a></li>
+					<li><a href="#">Help</a></li>				   				
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="display-result">
+				<span id="result">8854455</span>
+			</section>
+			<section id="binary-representation">
+				<table>
+					<tr>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+					</tr>
+					<tr>
+						<td class="bits-info" colspan="4">63</td>
+						<td class="bits-info" colspan="3">47</td>
+						<td class="bits-info indented-two-digits">32</td>
+					</tr>
+					<tr>
+						<td>0000</td>
+						<td>0000</td>
+						<td>1000</td>
+						<td>0111</td>
+						<td>0001</td>
+						<td>1011</td>
+						<td>1011</td>
+						<td>0111</td>
+					</tr>
+					<tr>
+						<td class="bits-info" colspan="4">31</td>
+						<td class="bits-info" colspan="3">15</td>
+						<td class="bits-info indented-one-digit">0</td>
+					</tr>
+				</table>   				
+			</section>
+			<section id="left-pane">
+				<fieldset class="left-pane-member">
+					<input type="radio" name="base" value="hex" />Hex<br />
+					<input type="radio" name="base" value="dec" checked="checked" />Dec<br />
+					<input type="radio" name="base" value="oct" />Oct<br />
+					<input type="radio" name="base" value="bin" />Bin
+				</fieldset>
+				<fieldset class="left-pane-member">
+					<input type="radio" name="ws" value="qword" checked="checked" />Qword<br />
+					<input type="radio" name="ws" value="dword" />Dword<br />
+					<input type="radio" name="ws" value="word" />Word<br />
+					<input type="radio" name="ws" value="byte" />Byte
+				</fieldset>
+			</section>
+			<section id="right-pane">
+				<table cellspacing="3">
+					<tr>
+						<td><button disabled="disabled"></button></td>
+						<td><button>Mod</button></td>
+						<td><button disabled="disabled">A</button></td>
+						<td><button disabled="disabled">MC</button></td>
+						<td><button disabled="disabled">MR</button></td>
+						<td><button disabled="disabled">MS</button></td>
+						<td><button disabled="disabled">M+</button></td>
+						<td><button disabled="disabled">M-</button></td>
+					</tr>
+					<tr>
+						<td><button>(</button></td>
+						<td><button>)</button></td>
+						<td><button disabled="disabled">B</button></td>
+						<td><button><span class="bigger-sign">←</span></button></td>
+						<td><button>CE</button></td>
+						<td><button>C</button></td>
+						<td><button>±</button></td>
+						<td><button disabled="disabled">√</button></td>
+					</tr>
+					<tr>
+						<td><button>RoL</button></td>
+						<td><button>RoR</button></td>
+						<td><button disabled="disabled">C</button></td>
+						<td><button class="digit">7</button></td>
+						<td><button class="digit">8</button></td>
+						<td><button class="digit">9</button></td>
+						<td><button>/</button></td>
+						<td><button disabled="disabled">%</button></td>
+					</tr>
+					<tr>
+						<td><button>Or</button></td>
+						<td><button>Xor</button></td>
+						<td><button disabled="disabled">D</button></td>
+						<td><button class="digit">4</button></td>
+						<td><button class="digit">5</button></td>
+						<td><button class="digit">6</button></td>
+						<td><button>*</button></td>
+						<td><button disabled="disabled">1/x</button></td>
+					</tr>
+					<tr>
+						<td><button>Lsh</button></td>
+						<td><button>Rsh</button></td>
+						<td><button disabled="disabled">E</button></td>
+						<td><button class="digit">1</button></td>
+						<td><button class="digit">2</button></td>
+						<td><button class="digit">3</button></td>
+						<td><button>-</button></td>
+						<td rowspan="2"><button><span class="bigger-sign">=</span></button></td>
+					</tr>
+					<tr>
+						<td><button>Not</button></td>
+						<td><button>And</button></td>
+						<td><button disabled="disabled">F</button></td>
+						<td colspan="2"><button class="digit">0</button></td>
+						<td><button disabled="disabled">.</button></td>
+						<td><button>+</button></td>
+					</tr>
+				</table>            	
+			</section>      			
+		</main>
+	</div>
+</body>
+</html>
