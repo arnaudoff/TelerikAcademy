@@ -1,6 +1,6 @@
 ## TelerikAcademy
 
-Homework, classwork &amp; exam preparation for the academy. 
+Homework, exams &amp; preparation for the academy. 
 
 ### List of contents (so far)
 1. C#
