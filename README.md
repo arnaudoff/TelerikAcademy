@@ -27,11 +27,11 @@ Homework, exams &amp; preparation for the academy.
        * OOP Principles - Part 1
        * OOP Principles - Part 2
        * CTS in .NET
-    * HTML
+2. HTML
        * Fundamentals
        * Tables
        * Forms and frames
        * Semantics
-    * CSS
+3. CSS
        * Overview
        * Presentation
