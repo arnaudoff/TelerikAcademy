@@ -1,0 +1,109 @@
+/* Original: https://cloud.githubusercontent.com/assets/3619393/7184545/7e1d45de-e466-11e4-965e-33f81b8ef5c6.png */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: serif;	
+	font-size: 14px;
+}
+
+article {
+	color: #A4A4A4;	
+}
+
+main {
+	background-color: #3B3B3B;	
+	border: 1px solid black;
+	border-radius: 15px 15px 15px 15px;
+	width: 662px;
+	height: 299px;
+}
+
+main header {
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+	background-image: background: -webkit-linear-gradient(#3B3B3B, #2D2D2D);
+	background-image: background: -o-linear-gradient(#3B3B3B, #2D2D2D);
+	background-image: background: linear-gradient(#3B3B3B, #2D2D2D);
+	background: -o-linear-gradient(#3B3B3B, #2D2D2D);
+	background: linear-gradient(#3B3B3B, #2D2D2D);
+}
+
+main header #header-inside-wrapper
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+main header img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+main header #header-inside-wrapper h2, input{
+	vertical-align: center;
+	display: inline;
+	margin-left: 15px;
+}
+
+main header #header-inside-wrapper h2 {
+	color: #FFF;
+}
+
+
+main section article {
+	padding: 10px 10px 10px 10px;	
+}
+
+main section article p {
+	font-family: Calibri;
+	padding-right: 30px;
+}
+
+main section article p q {
+	color: #fff;
+}
+
+main section article h1 {
+	color: #FEDC1B;
+	font-weight: normal;
+	font-size: 2.5em;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+} 
+
+input[type="submit"] {
+    color: #ffffff;
+    border: none;
+    background: url("images/button.png");
+    background-size: 100% 100%;
+    width: 50px;
+    height: 25px;
+}
+
+input[type="text"] {
+	width: 150px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    padding-left: 10px;
+    color:    #000;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000;
+   opacity:  1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #000;
+   opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #000;
+}

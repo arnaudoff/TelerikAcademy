@@ -1,0 +1,51 @@
+/* Original: https://cloud.githubusercontent.com/assets/3619393/7184547/7e1d5fce-e466-11e4-9839-5e30a95045d7.png */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI';
+	font-size: 13px;
+}
+
+main {
+	background-color: #EEEEEE;	
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius:  10px;
+	border-top-right-radius: 10px;
+	height: 538px;
+	width: 421px;	
+}
+
+main > header > h3 {
+	font-weight: normal;
+	padding: 10px 10px 10px 10px;
+}
+
+section {
+	background-color: #FFF;
+	margin: 35px 10px 35px 10px;
+	border: 1px solid #BEBEBE;
+	overflow: auto;
+	padding: 15px;
+}
+
+main > section > img {
+	float: left;
+	border: 1px solid #BEBEBE;	
+}
+
+main section p {
+	font-size: 0.9em;
+	margin-left: 20px;
+	float: left;
+	width: 200px;
+}
+
+main section .buttons {
+	float: right;
+	display: inline;
+	padding-top: 15px;
+}

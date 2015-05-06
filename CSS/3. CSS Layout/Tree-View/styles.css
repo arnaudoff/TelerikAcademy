@@ -1,0 +1,31 @@
+/* Original: https://cloud.githubusercontent.com/assets/3619393/7184543/7e1aaafe-e466-11e4-85b3-0d2a91f7e2f0.png */
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	text-decoration: none;
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav > ul > li:hover span {
+	text-decoration: underline;
+}
+
+nav ul li:hover ul {
+	text-decoration: none;
+	display: block;
+}
+
+nav ul li:hover ul li a {
+	color: #888;
+}

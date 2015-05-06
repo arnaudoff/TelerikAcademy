@@ -1,0 +1,105 @@
+/* Original: https://cloud.githubusercontent.com/assets/3619393/7184546/7e1d5f4c-e466-11e4-885e-f28d1471879b.png */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper {
+	font-family: Arial;
+	border: 3px solid #000;
+	border-radius: 10px;
+	font-size: 16px;
+	width: 1060px;
+	height: 781px;
+	overflow: hidden;
+}
+
+hr {
+	background-color: #000;
+	height: 3px;
+	border: none;
+	width: 95%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+nav {
+	padding: 15px;
+	text-align: center;
+}
+
+nav ul {
+	font-size: 0;
+}
+
+nav ul li {
+	font-size: 35px;
+	text-decoration: underline;
+	font-weight: bold;
+	color: #00AFF0;	
+	display: inline;
+	list-style-position: inside;
+	margin-left: 5px;
+}
+
+section {
+	display: inline-block;
+	padding: 10px;
+	margin-left: 10px;
+	border: 2px solid #000;
+	width: 670px;
+}
+
+fieldset {
+	border: 2px solid #000;
+	display: inline-block;
+	font-size: 27px;
+	margin-bottom: 5px;
+}
+
+fieldset img {
+    margin: 5px;
+    float: left;
+}
+
+fieldset > legend {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+fieldset > span {
+	padding: 10px 0px 10px 0px;
+    display: inline-block;
+    margin: 5px;
+    width: 150px;
+}
+
+fieldset > span:first-of-type {
+    margin-top: 30px;
+}
+
+fieldset > div {
+	text-align: center;
+	display: block;
+}
+
+aside {
+	font-size: 2em;
+	padding-left: 25px;
+	padding-top: 100px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+aside span {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+aside input {
+	width: 250px;
+	margin-left: 10px;
+}
