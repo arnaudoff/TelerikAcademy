@@ -1,0 +1,46 @@
+html,body, div, ul, li, a, img{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    padding-left: 15px;
+
+    div#wrapper {
+        width: 530px;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                .zoomed {
+                    display: none;
+                    position: absolute;
+                    padding-top: 15px;
+                    left: 15px;
+                }
+
+                &:hover > .zoomed{
+                    display: block;
+
+                    img {
+                        width: 200px;
+                        height: 200px;                  
+                    }
+                } 
+            }
+        }
+    }
+}

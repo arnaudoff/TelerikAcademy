@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #9215f2;
+  color: #ffffff;
+}
+body > header {
+  background: #d791ff;
+  background: -moz-linear-gradient(top, #d791ff 0%, #9019f0 95%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d791ff), color-stop(95%, #9019f0));
+  background: -webkit-linear-gradient(top, #d791ff 0%, #9019f0 95%);
+  background: -o-linear-gradient(top, #d791ff 0%, #9019f0 95%);
+  background: -ms-linear-gradient(top, #d791ff 0%, #9019f0 95%);
+  background: linear-gradient(to bottom, #d791ff 0%, #9019f0 95%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-color', endColorstr='@to-color', GradientType=0);
+}
+body > header #header-container {
+  zoom: 1;
+}
+body > header #header-container:after {
+  height: 0;
+  display: block;
+  content: "";
+  clear: both;
+}
+body > header #header-container #logo-container {
+  float: left;
+  margin: 20px 0px 0px 10px;
+}
+body > header #header-container #reg-form-container {
+  text-justify: right;
+  float: right;
+  margin-right: 30px;
+}
+body > header #header-container #reg-form-container div {
+  text-align: right;
+}
+body > header #header-container #reg-form-container div input {
+  width: 130px;
+  height: 18px;
+  margin: 20px 40px 0px 15px;
+  border: 1px #000000 solid;
+  border-radius: 10px;
+  background-color: #B35EF3;
+  display: inline-block;
+}
+body > header #header-container #reg-form-container div input:last-of-type {
+  margin-top: 10px;
+}
+body > header #header-container #reg-form-container div label {
+  width: 50px;
+}
+body > header #header-container #reg-form-container button {
+  padding: 5px 8px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #888;
+  border-style: outset;
+  border-radius: 10px;
+  background-color: #B35EF3;
+  color: #FFF;
+}
+body > header nav {
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 30px 0px 15px 30px;
+  border: 1px #000000 solid;
+}
+body > header nav #main-nav-list li {
+  padding-left: 10px;
+  display: inline-block;
+}
+body > header nav #main-nav-list li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+body > header nav #main-nav-list li:nth-of-type(2) ul {
+  display: none;
+}
+body section {
+  width: 79%;
+  float: left;
+}
+body section article {
+  margin: 10px 10px 15px 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px #000000 solid;
+}
+body section article header {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+body section article footer {
+  text-align: right;
+  margin-top: 20px;
+}
+body section article a {
+  color: #ddd;
+}
+body aside > ul {
+  list-style-type: none;
+}
+body aside > ul > li {
+  border-radius: 10px;
+  margin: 30px 40px 0px 10px;
+  padding: 15px;
+  width: 300px;
+  float: right;
+  border: 1px #000000 solid;
+}
+body aside > ul > li h2 {
+  padding-bottom: 2px;
+}
+body aside > ul > li p,
+body aside > ul > li ul {
+  padding: 10px 0px 10px 10px;
+}
+body aside > ul > li ul {
+  list-style-type: none;
+}
+body aside > ul > li ul li:before {
+  content: url('images/li-dot.png');
+}
+body aside > ul > li em,
+body aside > ul > li strong {
+  color: #ddd;
+}
+body aside > ul > li a {
+  color: darkgray;
+}
+body > footer {
+  padding-top: 20px;
+  text-align: center;
+  clear: both;
+}

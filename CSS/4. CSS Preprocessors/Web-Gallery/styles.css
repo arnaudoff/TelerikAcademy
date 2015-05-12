@@ -1,0 +1,43 @@
+html,
+body,
+div,
+ul,
+li,
+a,
+img {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 15px;
+  padding-left: 15px;
+}
+body div#wrapper {
+  width: 530px;
+}
+body div#wrapper ul {
+  list-style-type: none;
+}
+body div#wrapper ul li {
+  display: inline-block;
+}
+body div#wrapper ul li a {
+  text-decoration: none;
+}
+body div#wrapper ul li a img {
+  width: 80px;
+  height: 80px;
+}
+body div#wrapper ul li .zoomed {
+  display: none;
+  position: absolute;
+  padding-top: 15px;
+  left: 15px;
+}
+body div#wrapper ul li:hover > .zoomed {
+  display: block;
+}
+body div#wrapper ul li:hover > .zoomed img {
+  width: 200px;
+  height: 200px;
+}
