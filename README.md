@@ -37,3 +37,8 @@ Homework, exams &amp; preparation for the academy.
        * Presentation
        * Layout
        * Preprocessors
+
+4. JavaScript
+    * JavaScript-Fundamentals
+       * Data Types and Variables
+       * Operators and Expressions
