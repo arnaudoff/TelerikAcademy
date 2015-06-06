@@ -2,7 +2,7 @@
 
 Homework, exams &amp; preparation for the academy. 
 
-### List of contents (so far)
+### Contents (so far)
 1. C#
     * CSharp-Part-1
        * Introduction to programming
@@ -40,5 +40,10 @@ Homework, exams &amp; preparation for the academy.
 
 4. JavaScript
     * JavaScript-Fundamentals
-       * Data Types and Variables
-       * Operators and Expressions
+       * Data types and variables
+       * Operators and expressions
+       * Conditional statements
+       * Loops
+       * Arrays
+       * Functions
+       * Objects
