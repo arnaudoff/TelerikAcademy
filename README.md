@@ -47,3 +47,7 @@ Homework, exams &amp; preparation for the academy.
        * Arrays
        * Functions
        * Objects
+       * Array methods
+       * Strings
+       * Regular expressions
+   * JavaScript OOP
