@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. MineSweeper", "MineSweeper\04. MineSweeper.csproj", "{B20E8DFD-5F12-4358-849D-1F25806E9052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. BooleanToStringConverter", "BooleanToStringConverter\01. BooleanToStringConverter.csproj", "{B18AA437-6838-4D56-8C3C-8775493185C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. PersonGenerator", "PersonGenerator\02. PersonGenerator.csproj", "{484C52F3-7811-4FC1-B372-C21DB6503045}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. MozillaCheck", "03. MozillaCheck", "{7F9A54EE-1C2F-4F00-BD86-3D567A77AC2C}"
+	ProjectSection(SolutionItems) = preProject
+		MozillaCheck\mozilla-check.js = MozillaCheck\mozilla-check.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B20E8DFD-5F12-4358-849D-1F25806E9052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20E8DFD-5F12-4358-849D-1F25806E9052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20E8DFD-5F12-4358-849D-1F25806E9052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20E8DFD-5F12-4358-849D-1F25806E9052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18AA437-6838-4D56-8C3C-8775493185C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18AA437-6838-4D56-8C3C-8775493185C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18AA437-6838-4D56-8C3C-8775493185C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18AA437-6838-4D56-8C3C-8775493185C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484C52F3-7811-4FC1-B372-C21DB6503045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484C52F3-7811-4FC1-B372-C21DB6503045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484C52F3-7811-4FC1-B372-C21DB6503045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484C52F3-7811-4FC1-B372-C21DB6503045}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
