@@ -13,7 +13,7 @@
 
             Size newSize = initialSize.Rotate(90);
 
-            // Presumably a wrong formula in the task. A rotated by 90 degrees square cannot have a different dimensions.
+            // Presumably a wrong formula in the task. A rotated by 90 degrees square cannot have different dimensions.
             Console.WriteLine("Rotated width: {0}", newSize.Width);
             Console.WriteLine("Rotated height: {0}", newSize.Height);
         }
