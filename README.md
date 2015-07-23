@@ -1,6 +1,6 @@
 ## TelerikAcademy
 
-Homework, exams &amp; preparation for the academy. 
+Homework, exams &amp; exam preparation for the academy. 
 
 ### Contents (so far)
 1. C#
@@ -28,16 +28,15 @@ Homework, exams &amp; preparation for the academy.
        * OOP Principles - Part 2
        * CTS in .NET
 2. HTML
-       * Fundamentals
-       * Tables
-       * Forms and frames
-       * Semantics
+    * Fundamentals
+    * Tables
+    * Forms and frames
+    * Semantics
 3. CSS
-       * Overview
-       * Presentation
-       * Layout
-       * Preprocessors
-
+    * Overview
+    * Presentation
+    * Layout
+    * Preprocessors
 4. JavaScript
     * JavaScript-Fundamentals
        * Data types and variables
@@ -50,4 +49,23 @@ Homework, exams &amp; preparation for the academy.
        * Array methods
        * Strings
        * Regular expressions
-   * JavaScript OOP
+    * JavaScript OOP
+       * Functions and function expressions
+       * Scopes and closures
+       * Classical inheritance
+       * Prototypal inheritance
+       * Modules and patterns
+    * JavaScript UI & DOM
+
+5. High quality code
+    * Code formatting
+    * Naming identifiers
+    * Code documentation and comments
+    * Variables, data, expressions and constants
+    * Control flow, conditional statements and loops
+    * High quality methods
+    * High quality classes
+    * Defensive programming and exceptions
+    * Code tuning and optimization
+    * Unit testing
+
