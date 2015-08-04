@@ -36,16 +36,16 @@ function solve() {
             .text('hide');
 
         $selectedElement.on('click', '.button', function () {
-           var $this = $(this);
-           var $nextContent = $this.next('.content');
+            var $this = $(this);
+            var $nextContent = $this.nextUntil('.button').filter('.content').first();
 
-           if ($nextContent.css('display') !== 'none') {
-               $nextContent.css('display', 'none');
-               $this.text('show');
-           } else {
-               $nextContent.css('display', '');
-               $this.text('hide');
-           }
+            if ($nextContent.css('display') !== 'none') {
+                $nextContent.css('display', 'none');
+                $this.text('show');
+            } else {
+                $nextContent.css('display', '');
+                $this.text('hide');
+            }
         });
     };
 }
