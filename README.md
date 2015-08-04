@@ -56,7 +56,11 @@ Homework, exams &amp; exam preparation for the academy.
        * Prototypal inheritance
        * Modules and patterns
     * JavaScript UI & DOM
-
+       * DOM operations
+       * Event model
+       * jQuery overview
+       * jQuery plugins
+       * HTML templates (Handlebars.js)
 5. High quality code
     * Code formatting
     * Naming identifiers
