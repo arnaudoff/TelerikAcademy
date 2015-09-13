@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fortune Cookies</title>
+    <link rel="stylesheet" href="css/bootstrap-cosmo-theme.min.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="bower_components/toastr/toastr.css">
+    <style>
+        #footer {
+            background-color: #1a6ecc;
+            height: 50px;
+            color: white;
+        }
+
+        #footer p {
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#/">Fortune Cookies</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/">Home</a></li>
+                        <li><a href="#/categories">Categories</a></li>
+                        <li><a id="usersLink" href="#/users">Users</a></li>
+                        <li><a id="shareCookieLink" href="#/cookies/share">Share a cookie</a></li>
+                        <li id="myCookieBtn"><a href="#/my-cookie">My hourly fortune cookie</a></li>
+                    </ul>
+                    <ul id="user-control-menu" class="nav navbar-nav navbar-right">
+                        <li id="registerBtn"><a href="#/users/register">Register</a></li>
+                        <li id="loginBtn"><a href="#/users/login">Login</a></li>
+                        <li id="logoutBtn"><a href="#/home">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" class="container">
+        </div>
+    </div>
+    <footer class="container">
+        <div id="footer">
+            <p>Powered by jQuery, Sammy.js, Handlebars and Bootstrap.</p>
+        </div>
+    </footer>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/sammy/lib/sammy.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <script src="bower_components/sha1/index.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/toastr/toastr.js"></script>
+
+    <!-- App -->
+
+    <!-- Controllers -->
+    <script src="controllers/home-controller.js"></script>
+    <script src="controllers/users-controller.js"></script>
+    <script src="controllers/cookies-controller.js"></script>
+    <script src="controllers/categories-controller.js"></script>
+
+    <!-- Core files -->
+    <script src="app/data.js"></script>
+    <script src="app/templates.js"></script>
+    <script src="app/ajax-request.js"></script>
+    <script src="app/validation.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

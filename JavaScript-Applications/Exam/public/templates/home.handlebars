@@ -1,0 +1,22 @@
+<div class="form-group">
+    <label for="tb-category-name" class="col-sm-1 control-label">By category: </label>
+    <div class="col-sm-2">
+        <input type="text" class="form-control" id="tb-category-name" placeholder="Category name">
+    </div>
+    <button id="btn-sortby-category" class="btn btn-success btn-sm">Filter</button>
+
+    <a href="#/home?sortBy=likes" id="btn-sortby-most-likes" class="pull-right btn btn-success btn-sm">Sort by likes</a>
+    <a href="#/home?sortBy=date"  id="btn-sortby-sharedate" class="pull-right btn btn-info btn-sm">Sort by date</a>
+</div>
+<br />
+{{#this}}
+<h1>{{this.text}}</h1>
+Categories:
+<span class="label label-primary">{{this.category}}</span> <br /> <br />
+<img src="{{this.img}}">
+<p>Shared <b>{{this.shareDate}}</b> by {{this.userId}} | Likes: <b>{{this.likes}}</b> | Dislikes: <b>{{this.dislikes}}</b></p>
+<button data-id="{{this.id}}" class="btn-success btn-like" class="btn btn-success btn-sm">Like</button>
+<button data-id="{{this.id}}" class="btn-danger btn-dislike" class="btn btn-danger btn-sm">Dislike</button> <br />
+<button data-id="{{this.id}}" class="pull-right btn-info btn-reshare" class="btn btn-danger btn-sm">Reshare</button> <br />
+<hr />
+{{/this}}
