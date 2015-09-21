@@ -12,7 +12,7 @@
 
 <img src="http://www.dofactory.com/images/diagrams/net/composite.gif" alt="Composite pattern" />
 
-#### Учасници
+#### Участници
 
 - `Component`
     - дефинира интерфейс за компонентите, участващи в композицията
@@ -130,22 +130,22 @@ namespace DesignPatterns.Structural.Composite
 
 #### Описание
 
-Динамично добавяне на допълнителна отговорност на обект. Декораторите дават гъвкава алтернатива на наследяването с цел добавяне на допълнителна функционалност. Най-често се използва за решаването на *class explosion*.
+Динамично добавяне на допълнителна отговорност на обект. Декораторите дават гъвкава алтернатива на наследяването с цел добавяне на допълнителна функционалност. Най-често се използват за решаването на *class explosion*.
 
 #### Диаграма
 
-<img src="http://www.dofactory.com/images/diagrams/net/decorator.gif" alt="Decorator" />
+<img src="http://www.dofactory.com/images/diagrams/net/decorator.gif" alt="Decorator pattern" />
 
-#### Учасници
+#### Участници
 
 - `Component` (`LibraryItem`)
-    - дефинира интерфейс за обекти, на които може да им се добавя отговорност динамично
+    - дефинира интерфейс за обекти, на които може да се добавя отговорност динамично
 - `ConcreteComponent` (`Book`, `Video`)
-    - дефинира конкретния обект, за който можем да закачим допълнителна отговорност
+    - дефинира конкретния обект, на който можем да закачим допълнителна отговорност
 - `Decorator` (`Decorator`)
-    - съдържа референция към `Component` обект и дефинира интерфейс, който имплементира `Component` интерфейса
+    - пази референция към `Component` обект и дефинира интерфейс, който имплементира `Component` интерфейса
 - `ConcreteDecorator` (`Borrowable`)
-    - добавя отговорности на обект
+    - добавя конкретна отговорност на обект
 
 #### Имплементация (реален пример)
 
@@ -284,7 +284,7 @@ namespace DesignPatterns.Structural.Decorator
 
 <img src="http://www.dofactory.com/images/diagrams/net/bridge.gif" alt="Bridge pattern" />
 
-#### Учасници
+#### Участници
 
 - `Abstraction`
     - дефинира интерфейс на някаква абстракция
