@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='students.xslt'?>
+<students xmlns:student="urn:students">
+  <student>
+    <name>Georgi Petrov</name>
+    <gender>Male</gender>
+    <birthday>15.09.1995</birthday>
+    <phone>0888888888</phone>
+    <email>go6yy_petrov@abv.bg</email>
+    <course>Programming 101</course>
+    <specialty>Computer science</specialty>
+    <faculty-number>1</faculty-number>
+    <exams>
+      <exam>
+        <name>C# Fundamentals - Part 1</name>
+        <tutor>Evlogi Hristov</tutor>
+        <grade>200</grade>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Peter Georgiev</name>
+    <gender>Male</gender>
+    <birthday>15.09.1994</birthday>
+    <phone>0899999999</phone>
+    <email>pesho_mastera@abv.bg</email>
+    <course>Data structures and algorithms</course>
+    <specialty>Computer science</specialty>
+    <faculty-number>2</faculty-number>
+    <exams>
+      <exam>
+        <name>Advanced discrete mathematics</name>
+        <tutor>Krasimir Manev</tutor>
+        <grade>6</grade>
+      </exam>
+      <exam>
+        <name>Pratical DSA in C#</name>
+        <tutor>Ivaylo Kenov</tutor>
+        <grade>500</grade>
+      </exam>
+    </exams>
+  </student>
+</students>
