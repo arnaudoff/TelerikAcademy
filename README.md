@@ -72,4 +72,13 @@ Homework, exams &amp; exam preparation for the academy.
     * Defensive programming and exceptions
     * Code tuning and optimization
     * Unit testing
+    * Test-driven development
+    * Refactoring
+    * Development tools
+    * Design patterns
+    * Mocking with Moq and JustMock
+6. Databases
+    * XML basics
+    * Processing XML in .NET
+    * Processing JSON in .NET
 
