@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+  <album>
+    <name>Perfect Strangers</name>
+    <artist>Deep Purple</artist>
+  </album>
+  <album>
+    <name>Californication</name>
+    <artist>Red Hot Chili Peppers</artist>
+  </album>
+  <album>
+    <name>Stadium Arcadium</name>
+    <artist>Red Hot Chili Peppers</artist>
+  </album>
+</albums>

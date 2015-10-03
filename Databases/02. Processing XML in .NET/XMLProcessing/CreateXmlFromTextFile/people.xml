@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<people>
+  <person>
+    <name>Ivan Ivanov</name>
+    <address>bul. "Aleksandar Malinov" 31, 1729 Sofia</address>
+    <phoneNumber>0888888888</phoneNumber>
+  </person>
+</people>

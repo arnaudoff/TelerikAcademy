@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dir path="../../">
+  <dir path="../../bin">
+    <dir path="../../bin\Debug">
+      <file name="TraverseDirectoryXDocument.exe" length="6144" createdOn="2015-10-02T23:06:27.6377502+03:00" />
+      <file name="TraverseDirectoryXDocument.exe.config" length="187" createdOn="2015-10-02T22:19:24.976241+03:00" />
+      <file name="TraverseDirectoryXDocument.pdb" length="15872" createdOn="2015-10-02T23:06:27.642754+03:00" />
+      <file name="TraverseDirectoryXDocument.vshost.exe" length="23168" createdOn="2015-10-02T22:19:25.0074967+03:00" />
+      <file name="TraverseDirectoryXDocument.vshost.exe.config" length="187" createdOn="2015-10-02T22:19:25.0074967+03:00" />
+    </dir>
+    <dir path="../../bin\Release" />
+  </dir>
+  <dir path="../../obj">
+    <dir path="../../obj\Debug">
+      <dir path="../../obj\Debug\TempPE" />
+      <file name="10.02. TraverseDirectoryXDocument.csproj.FileListAbsolute.txt" length="1013" createdOn="2015-10-02T22:23:12.5850466+03:00" />
+      <file name="10.02. TraverseDirectoryXDocument.csprojResolveAssemblyReference.cache" length="1755" createdOn="2015-10-02T23:06:27.1735669+03:00" />
+      <file name="10.2 TraverseDirectoryXDocument.csproj.FileListAbsolute.txt" length="168" createdOn="2015-10-02T22:21:06.2312376+03:00" />
+      <file name="DesignTimeResolveAssemblyReferencesInput.cache" length="6799" createdOn="2015-10-02T22:19:24.5790683+03:00" />
+      <file name="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" length="0" createdOn="2015-10-02T22:19:24.5321924+03:00" />
+      <file name="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" length="0" createdOn="2015-10-02T22:19:24.5634442+03:00" />
+      <file name="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" length="0" createdOn="2015-10-02T22:19:24.5321924+03:00" />
+      <file name="TraverseDirectoryXDocument.csproj.FileListAbsolute.txt" length="168" createdOn="2015-10-02T22:19:24.976241+03:00" />
+      <file name="TraverseDirectoryXDocument.exe" length="6144" createdOn="2015-10-02T23:06:27.3210239+03:00" />
+      <file name="TraverseDirectoryXDocument.pdb" length="15872" createdOn="2015-10-02T23:28:17.9293997+03:00" />
+    </dir>
+  </dir>
+  <dir path="../../Properties">
+    <file name="AssemblyInfo.cs" length="1464" createdOn="2015-10-02T22:19:24.4228127+03:00" />
+  </dir>
+  <file name="10.02. TraverseDirectoryXDocument.csproj" length="2613" createdOn="2015-10-02T22:19:24.4384376+03:00" />
+  <file name="App.config" length="187" createdOn="2015-10-02T22:19:24.4228127+03:00" />
+  <file name="dirinfo.xml" length="2736" createdOn="2015-10-02T23:28:18.0815008+03:00" />
+  <file name="TraverseDirectoryXDocument.cs" length="2007" createdOn="2015-10-02T22:19:24.4384376+03:00" />
+</dir>

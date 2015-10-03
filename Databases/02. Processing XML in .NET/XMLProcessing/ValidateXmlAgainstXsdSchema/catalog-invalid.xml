@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+  <album>
+    <name>Perfect Strangers</name>
+    <artist>Deep Purple</artist>
+    <year>1984</year>
+    <producer>Roger Glover and Deep Purple</producer>
+    <price>Priceless!</price>
+    <songs>
+      <song>
+        <title>Perfect Strangers</title>
+        <duration>5:23</duration>
+      </song>
+      <song>
+        <title>Knocking at Your Back Door</title>
+        <duration>6:04</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Californication</name>
+    <artist>Red Hot Chili Peppers</artist>
+    <year>1999</year>
+    <producer>Rick Rubin</producer>
+    <price>15</price>
+    <songs>
+      <song>
+        <title>Scar Tissue</title>
+        <duration>3:35</duration>
+      </song>
+      <song>
+        <title>Otherside</title>
+        <duration>4:15</duration>
+      </song>
+      <song>
+        <title>Californication</title>
+        <duration>3:18</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Stadium Arcadium</name>
+    <artist>Red Hot Chili Peppers</artist>
+    <year>2006</year>
+    <producer>Rick Rubin</producer>
+    <price>15</price>
+    <songs>
+      <song>
+        <title>Dani California</title>
+        <duration>4:42</duration>
+      </song>
+      <song>
+        <title>Show (Hey Oh)</title>
+        <duration>5:37</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Road Trippin’ Through Time</name>
+    <artist>Red Hot Chili Peppers</artist>
+    <year>2011</year>
+    <producer>Rick Rubin</producer>
+    <price>1337</price>
+    <songs>
+      <song>
+        <title>Dani California</title>
+        <duration>4:42</duration>
+      </song>
+      <song>
+        <title>Show (Hey Oh)</title>
+        <duration>5:37</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>

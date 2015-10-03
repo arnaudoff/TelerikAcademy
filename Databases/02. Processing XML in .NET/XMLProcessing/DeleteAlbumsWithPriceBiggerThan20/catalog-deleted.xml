@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<catalog>
+  <album>
+    <name>Perfect Strangers</name>
+    <artist>Deep Purple</artist>
+    <year>1984</year>
+    <producer>Roger Glover and Deep Purple</producer>
+    <price>12</price>
+    <songs>
+      <song>
+        <title>Perfect Strangers</title>
+        <duration>5:23</duration>
+      </song>
+      <song>
+        <title>Knocking at Your Back Door</title>
+        <duration>6:04</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>
