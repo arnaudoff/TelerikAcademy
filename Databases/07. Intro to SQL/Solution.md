@@ -22,7 +22,7 @@
 5. Write a SQL query to find all department names.
 
   ```sql
-  SELECT Name as DepartmentName
+  SELECT Name AS DepartmentName
   FROM TelerikAcademy.dbo.Departments
   ```
 
@@ -36,14 +36,14 @@
 7. Write a SQL to find the full name of each employee.
 
   ```sql
-  SELECT FirstName + ' ' + LastName as FullName
+  SELECT FirstName + ' ' + LastName AS FullName
   FROM TelerikAcademy.dbo.Employees
   ```
 
 8. Write a SQL query to find the email addresses of each employee (by his first and last name). Consider that the mail domain is telerik.com. Emails should look like “John.Doe@telerik.com". The produced column should be named "Full Email Addresses".
   
   ```sql
-  SELECT FirstName + '.' + LastName + '@telerik.com' as FullEmailAddresses
+  SELECT FirstName + '.' + LastName + '@telerik.com' AS FullEmailAddresses
   FROM TelerikAcademy.dbo.Employees
   ```
 
@@ -89,7 +89,7 @@
 14. Write a SQL query to find the names of all employees whose salary is 25000, 14000, 12500 or 23600.
 
   ```sql
-  SELECT FirstName + ' ' + LastName as FullName, Salary
+  SELECT FirstName + ' ' + LastName AS FullName, Salary
   FROM TelerikAcademy.dbo.Employees
   WHERE Salary IN (25000, 14000, 12500, 23600)
   ```
@@ -139,7 +139,7 @@
 20. Write a SQL query to find all employees along with their manager.
 
   ```sql
-  SELECT e.FirstName + ' ' + e.LastName as EmployeeName, m.FirstName + ' ' + m.LastName as ManagerName
+  SELECT e.FirstName + ' ' + e.LastName AS EmployeeName, m.FirstName + ' ' + m.LastName AS ManagerName
   FROM TelerikAcademy.dbo.Employees e
   INNER JOIN TelerikAcademy.dbo.Employees m
     ON (e.ManagerID = m.EmployeeID)
@@ -148,7 +148,9 @@
 21. Write a SQL query to find all employees, along with their manager and their address. Join the 3 tables: Employees e, Employees m and Addresses a.
 
   ```sql
-  SELECT e.FirstName + ' ' + e.LastName AS EmployeeName, m.FirstName + ' ' + m.LastName AS ManagerName, a.AddressText AS EmployeeAddress
+  SELECT e.FirstName + ' ' + e.LastName AS EmployeeName,
+         m.FirstName + ' ' + m.LastName AS ManagerName,
+         a.AddressText AS EmployeeAddress
   FROM TelerikAcademy.dbo.Employees e
   INNER JOIN TelerikAcademy.dbo.Employees m
     ON (e.ManagerID = m.EmployeeID)
