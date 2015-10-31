@@ -57,7 +57,7 @@
   ```
   **Answer** (assuming matrix of size `n * m`):
  - Worst case (`CalcSum` is called with zero as a second parameter) - The `for` loop will run in *O(n)* and the recursion will run in *O(m - 1)*, therefore the overall complexity of the algorithm will be *O(n * m)*.
- - Best case (`CalcSum` is called with second parameter `row` where `row` ? [`m` - 1; +8)) - The `for` loop will run in *O(n)* and the recursive call won't be reached at all. The overall complexity will be
+ - Best case (`CalcSum` is called with second parameter `row` where `row` ? [`m` - 1; +∞)) - The `for` loop will run in *O(n)* and the recursive call won't be reached at all. The overall complexity will be
  *O(n)*.
  
  
