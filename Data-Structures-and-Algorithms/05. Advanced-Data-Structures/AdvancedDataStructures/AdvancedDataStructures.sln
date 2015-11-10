@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapPriorityQueue", "HeapPriorityQueue\HeapPriorityQueue.csproj", "{0F10FBDD-8796-4C47-B7FD-43BFB77F7639}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. HeapPriorityQueue", "HeapPriorityQueue\01. HeapPriorityQueue.csproj", "{0F10FBDD-8796-4C47-B7FD-43BFB77F7639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Products", "Products\02. Products.csproj", "{8E1A6494-8D06-4817-A771-3099FB0BE872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. FindWordsInLargeFile", "FindWordsInLargeFile\03. FindWordsInLargeFile.csproj", "{0E0D7FB1-0403-46E2-9FCF-48CBA3F7532B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{0F10FBDD-8796-4C47-B7FD-43BFB77F7639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F10FBDD-8796-4C47-B7FD-43BFB77F7639}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F10FBDD-8796-4C47-B7FD-43BFB77F7639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E1A6494-8D06-4817-A771-3099FB0BE872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1A6494-8D06-4817-A771-3099FB0BE872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1A6494-8D06-4817-A771-3099FB0BE872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1A6494-8D06-4817-A771-3099FB0BE872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E0D7FB1-0403-46E2-9FCF-48CBA3F7532B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0D7FB1-0403-46E2-9FCF-48CBA3F7532B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0D7FB1-0403-46E2-9FCF-48CBA3F7532B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0D7FB1-0403-46E2-9FCF-48CBA3F7532B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
